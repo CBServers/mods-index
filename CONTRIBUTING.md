@@ -127,9 +127,10 @@ Archives (`.zip`, `.7z`, `.rar`) are not supported; list every file on its own.
 
 Put up to 10 PNG or JPG images in your entry folder and list them in `images`:
 
-- The first image is the main one: it is shown on the card and first in the details panel. It must be 16:9
-  (1920x1080 or 1280x720 is ideal). Use an in-game screenshot.
-- The rest show up as the scrolling screenshot list in the details panel. Any shape is fine.
+- The first image is the main one: it is shown on the card and first in the details panel. 16:9 (1920x1080
+  or 1280x720) fills the card; other shapes are shown whole over a blurred copy of themselves.
+- The rest show up as the scrolling screenshot list in the details panel.
+- Any shape is fine for every image.
 - Each image is at most 8 MB and at most 3840 pixels on its longest side.
 
 Only `entry.json` and the images you list belong in the folder.

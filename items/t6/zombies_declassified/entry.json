@@ -4,7 +4,8 @@
     "name": "Zombies Declassified (DLC 5)",
     "author": "Logo-2K",
     "version": "beta2",
-    "description": "A work-in-progress PC port of Black Ops II's unreleased fifth map pack, bringing nine classic zombies maps to Plutonium.",
+    "description": "A work-in-progress PC port of Black Ops II's unreleased fifth map pack, made for Plutonium. Each map is ported, polished and bug fixed to play as close to an official release as possible.\n\nBeta 2 includes nine maps, each with the Ray Gun Mark II in the box:\n[list][*]Nacht der Untoten\n[*]Verrückt\n[*]Shi No Numa\n[*]Der Riese\n[*]Kino der Toten\n[*]\"Five\"\n[*]Ascension\n[*]Shangri-La\n[*]Moon[/list]\nCall of the Dead is planned for the final release. Requires Black Ops II with all DLC.\n\nSource, progress and bug reports: [url=https://github.com/Logo-2K/zombies-declassified]github.com/Logo-2K/zombies-declassified[/url]",
+    "images": ["main.jpg"],
     "files": [
         {
             "path": "mods/dlc5/mod.json",
