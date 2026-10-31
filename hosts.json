@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "GitHub release assets",
+            "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/releases/download/[^/?#]+/[^/?#]+$"
+        }
+    ],
+    "redirects": [
+        "github.com",
+        "objects.githubusercontent.com",
+        "release-assets.githubusercontent.com"
+    ],
+    "cdn": [
+        "https://cdn-na.cbservers.dev/",
+        "https://cdn-eu.cbservers.dev/"
+    ]
+}

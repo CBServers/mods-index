@@ -1,0 +1,1817 @@
+{
+    "id": "zombies_declassified",
+    "type": "map",
+    "name": "Zombies Declassified (DLC 5)",
+    "author": "Logo-2K",
+    "version": "beta2",
+    "description": "A work-in-progress PC port of Black Ops II's unreleased fifth map pack, bringing nine classic zombies maps to Plutonium.",
+    "files": [
+        {
+            "path": "mods/dlc5/mod.json",
+            "size": 149,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/mod.json"
+        },
+        {
+            "path": "mods/dlc5/mod_load.ff",
+            "size": 560448,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/mod_load.ff"
+        },
+        {
+            "path": "mods/dlc5/mod_load.ipak",
+            "size": 15499264,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/mod_load.ipak"
+        },
+        {
+            "path": "raw/maps/mp/animscripts/zm_dog_combat.gsc",
+            "size": 17353,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_dog_combat.gsc"
+        },
+        {
+            "path": "raw/maps/mp/animscripts/zm_dog_stop.gsc",
+            "size": 6564,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_dog_stop.gsc"
+        },
+        {
+            "path": "raw/scripts/zm/zzz_zm_dogfog.csc",
+            "size": 797,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_dogfog.csc"
+        },
+        {
+            "path": "raw/scripts/zm/zzz_zm_factoryfog.csc",
+            "size": 998,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_factoryfog.csc"
+        },
+        {
+            "path": "raw/scripts/zm/zzz_zm_factorypower.csc",
+            "size": 482,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_factorypower.csc"
+        },
+        {
+            "path": "raw/scripts/zm/zzz_zm_gglow.csc",
+            "size": 273,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_gglow.csc"
+        },
+        {
+            "path": "raw/scripts/zm/zzz_zm_location.gsc",
+            "size": 189,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_location.gsc"
+        },
+        {
+            "path": "raw/scripts/zm/zzz_zm_moonsky.csc",
+            "size": 566,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_moonsky.csc"
+        },
+        {
+            "path": "raw/scripts/zm/zzz_zm_sumpffog.csc",
+            "size": 964,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sumpffog.csc"
+        },
+        {
+            "path": "raw/ui/t6/mainlobby.lua",
+            "size": 43047,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/mainlobby.lua"
+        },
+        {
+            "path": "raw/ui_mp/t6/hud/scoreboard.lua",
+            "size": 50914,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/scoreboard.lua"
+        },
+        {
+            "path": "usermaps/zm_asylum/as_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/as_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/bp_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/bp_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/br_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/br_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/cz_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/cz_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/en_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/en_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/fc_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fc_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/fj_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fj_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/fr_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fr_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/ge_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ge_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/it_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/it_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/ja_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ja_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/ko_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ko_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/ms_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ms_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/po_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/po_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/ru_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ru_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_protoround.gsc",
+            "size": 712,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_protoround.gsc"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_zm_ambflies.gsc",
+            "size": 2093,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_ambflies.gsc"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_zm_boxthunder.gsc",
+            "size": 778,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_boxthunder.gsc"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_zm_cscprobe.csc",
+            "size": 107,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_cscprobe.csc"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_zm_deathsong.gsc",
+            "size": 2112,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_deathsong.gsc"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_zm_exertvoice.gsc",
+            "size": 3065,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_exertvoice.gsc"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_zm_h2_preserve.gsc",
+            "size": 1024,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_h2_preserve.gsc"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_zm_howlparity.gsc",
+            "size": 1541,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_howlparity.gsc"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_zm_m27box.gsc",
+            "size": 731,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_m27box.gsc"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_zm_mk2box.gsc",
+            "size": 796,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_mk2box.gsc"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_zm_roundfix.gsc",
+            "size": 666,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_roundfix.gsc"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_zm_samlaugh.gsc",
+            "size": 774,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_samlaugh.gsc"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_zm_watersheet.gsc",
+            "size": 989,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_watersheet.gsc"
+        },
+        {
+            "path": "usermaps/zm_asylum/scripts/zm/zzz_zm_whereami.gsc",
+            "size": 1669,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_whereami.gsc"
+        },
+        {
+            "path": "usermaps/zm_asylum/sp_zm_asylum.ff",
+            "size": 38848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/sp_zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_asylum/zm_asylum.ff",
+            "size": 58641664,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_asylum.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/as_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/as_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/bp_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/bp_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/br_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/br_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/cz_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/cz_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/en_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/en_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/fc_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fc_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/fj_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fj_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/fr_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fr_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/ge_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ge_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/it_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/it_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/ja_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ja_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/ko_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ko_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/ms_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ms_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/po_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/po_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/ru_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ru_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/scripts/zm/zzz_protoround.gsc",
+            "size": 712,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_protoround.gsc"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/scripts/zm/zzz_zm_centrifugewatch.gsc",
+            "size": 1202,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_centrifugewatch.gsc"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/scripts/zm/zzz_zm_crawlerwatch.gsc",
+            "size": 2256,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_crawlerwatch.gsc"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/scripts/zm/zzz_zm_cscprobe.csc",
+            "size": 107,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_cscprobe.csc"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/scripts/zm/zzz_zm_exertvoice.gsc",
+            "size": 3065,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_exertvoice.gsc"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/scripts/zm/zzz_zm_h2_preserve.gsc",
+            "size": 1024,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_h2_preserve.gsc"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/scripts/zm/zzz_zm_mk2box.gsc",
+            "size": 796,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_mk2box.gsc"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/scripts/zm/zzz_zm_roundfix.gsc",
+            "size": 666,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_roundfix.gsc"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/scripts/zm/zzz_zm_samlaugh.gsc",
+            "size": 774,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_samlaugh.gsc"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/scripts/zm/zzz_zm_sfdeathsong.gsc",
+            "size": 1434,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sfdeathsong.gsc"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/sp_zm_cosmodrome.ff",
+            "size": 46976,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/sp_zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_cosmodrome/zm_cosmodrome.ff",
+            "size": 74176192,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_cosmodrome.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/as_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/as_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/bp_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/bp_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/br_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/br_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/cz_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/cz_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/en_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/en_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/fc_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fc_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/fj_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fj_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/fr_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fr_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/ge_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ge_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/it_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/it_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/ja_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ja_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/ko_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ko_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/ms_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ms_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/po_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/po_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/ru_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ru_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_protonames.gsc",
+            "size": 566,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_protonames.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_protoround.gsc",
+            "size": 712,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_protoround.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_cscprobe.csc",
+            "size": 107,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_cscprobe.csc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_dognudge.gsc",
+            "size": 1486,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_dognudge.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_eggsong.gsc",
+            "size": 3162,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_eggsong.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_exertvoice.gsc",
+            "size": 3065,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_exertvoice.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_factorymine.gsc",
+            "size": 923,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_factorymine.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_factorytelevox.gsc",
+            "size": 638,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_factorytelevox.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_factoryvox.gsc",
+            "size": 4248,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_factoryvox.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_favweapon.gsc",
+            "size": 1117,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_favweapon.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_h2_preserve.gsc",
+            "size": 1024,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_h2_preserve.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_mk2box.gsc",
+            "size": 796,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_mk2box.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_monkeymodel.gsc",
+            "size": 636,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_monkeymodel.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_roundfix.gsc",
+            "size": 666,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_roundfix.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_sfdeathsong.gsc",
+            "size": 1434,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sfdeathsong.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_sfparity.gsc",
+            "size": 1089,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sfparity.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/scripts/zm/zzz_zm_whereami.gsc",
+            "size": 1669,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_whereami.gsc"
+        },
+        {
+            "path": "usermaps/zm_factory/sp_zm_factory.ff",
+            "size": 42624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/sp_zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_factory/zm_factory.ff",
+            "size": 58817792,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_factory.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/as_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/as_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/bp_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/bp_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/br_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/br_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/cz_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/cz_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/en_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/en_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/fc_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fc_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/fj_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fj_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/fr_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fr_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/ge_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ge_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/it_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/it_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/ja_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ja_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/ko_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ko_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/ms_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ms_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/po_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/po_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/ru_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ru_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_protoround.gsc",
+            "size": 712,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_protoround.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_cscprobe.csc",
+            "size": 107,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_cscprobe.csc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_exertvoice.gsc",
+            "size": 3065,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_exertvoice.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_gravitywatch.gsc",
+            "size": 1370,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_gravitywatch.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_h2_preserve.gsc",
+            "size": 1024,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_h2_preserve.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_hackfix.gsc",
+            "size": 1919,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_hackfix.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_mk2box.gsc",
+            "size": 796,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_mk2box.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_moona51perks.gsc",
+            "size": 648,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_moona51perks.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_moonbuzzer.gsc",
+            "size": 2151,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_moonbuzzer.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_moongravfix.gsc",
+            "size": 250,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_moongravfix.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_moonhackammo.gsc",
+            "size": 1108,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_moonhackammo.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_moonintercom.gsc",
+            "size": 370,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_moonintercom.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_moonroundhud.gsc",
+            "size": 2265,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_moonroundhud.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_moonsplash.gsc",
+            "size": 1056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_moonsplash.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_nmlsprint.gsc",
+            "size": 2504,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_nmlsprint.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_roundfix.gsc",
+            "size": 666,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_roundfix.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zm_sfdeathsong.gsc",
+            "size": 1434,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sfdeathsong.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zz_zzzzzzzzmoonjump.gsc",
+            "size": 2726,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zz_zzzzzzzzmoonjump.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/scripts/zm/zzz_zz_zzzzzzzzsunfix.gsc",
+            "size": 1238,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zz_zzzzzzzzsunfix.gsc"
+        },
+        {
+            "path": "usermaps/zm_moon/sp_zm_moon.ff",
+            "size": 140352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/sp_zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_moon/zm_moon.ff",
+            "size": 86200704,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_moon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/as_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/as_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/bp_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/bp_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/br_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/br_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/cz_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/cz_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/en_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/en_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/fc_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fc_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/fj_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fj_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/fr_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fr_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/ge_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ge_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/it_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/it_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/ja_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ja_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/ko_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ko_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/ms_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ms_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/po_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/po_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/ru_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ru_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/scripts/zm/zzz_protoround.gsc",
+            "size": 712,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_protoround.gsc"
+        },
+        {
+            "path": "usermaps/zm_pentagon/scripts/zm/zzz_zm_cscprobe.csc",
+            "size": 107,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_cscprobe.csc"
+        },
+        {
+            "path": "usermaps/zm_pentagon/scripts/zm/zzz_zm_exertvoice.gsc",
+            "size": 3065,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_exertvoice.gsc"
+        },
+        {
+            "path": "usermaps/zm_pentagon/scripts/zm/zzz_zm_h2_preserve.gsc",
+            "size": 1024,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_h2_preserve.gsc"
+        },
+        {
+            "path": "usermaps/zm_pentagon/scripts/zm/zzz_zm_howlparity.gsc",
+            "size": 1541,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_howlparity.gsc"
+        },
+        {
+            "path": "usermaps/zm_pentagon/scripts/zm/zzz_zm_mk2box.gsc",
+            "size": 796,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_mk2box.gsc"
+        },
+        {
+            "path": "usermaps/zm_pentagon/scripts/zm/zzz_zm_monkeymodel.gsc",
+            "size": 636,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_monkeymodel.gsc"
+        },
+        {
+            "path": "usermaps/zm_pentagon/scripts/zm/zzz_zm_pentagonspawn.gsc",
+            "size": 2292,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_pentagonspawn.gsc"
+        },
+        {
+            "path": "usermaps/zm_pentagon/scripts/zm/zzz_zm_pentagontrap.gsc",
+            "size": 774,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_pentagontrap.gsc"
+        },
+        {
+            "path": "usermaps/zm_pentagon/scripts/zm/zzz_zm_roundfix.gsc",
+            "size": 666,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_roundfix.gsc"
+        },
+        {
+            "path": "usermaps/zm_pentagon/scripts/zm/zzz_zm_samlaugh.gsc",
+            "size": 774,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_samlaugh.gsc"
+        },
+        {
+            "path": "usermaps/zm_pentagon/scripts/zm/zzz_zm_sfdeathsong.gsc",
+            "size": 1434,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sfdeathsong.gsc"
+        },
+        {
+            "path": "usermaps/zm_pentagon/sp_zm_pentagon.ff",
+            "size": 55360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/sp_zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_pentagon/zm_pentagon.ff",
+            "size": 63539904,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_pentagon.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/as_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/as_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/bp_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/bp_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/br_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/br_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/cz_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/cz_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/en_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/en_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/fc_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fc_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/fj_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fj_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/fr_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fr_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/ge_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ge_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/it_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/it_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/ja_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ja_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/ko_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ko_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/ms_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ms_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/po_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/po_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/ru_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ru_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_cabinet.gsc",
+            "size": 2910,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_cabinet.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_protonames.gsc",
+            "size": 566,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_protonames.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_protoround.gsc",
+            "size": 712,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_protoround.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_zm_barrelsound.gsc",
+            "size": 2948,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_barrelsound.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_zm_cscprobe.csc",
+            "size": 107,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_cscprobe.csc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_zm_doorcreak.gsc",
+            "size": 1965,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_doorcreak.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_zm_eggsong.gsc",
+            "size": 3162,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_eggsong.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_zm_exertvoice.gsc",
+            "size": 3065,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_exertvoice.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_zm_h2_preserve.gsc",
+            "size": 1024,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_h2_preserve.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_zm_mk2box.gsc",
+            "size": 796,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_mk2box.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_zm_monkeymodel.gsc",
+            "size": 636,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_monkeymodel.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_zm_music.gsc",
+            "size": 5422,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_music.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_zm_roundfix.gsc",
+            "size": 666,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_roundfix.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_zm_samlaugh.gsc",
+            "size": 774,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_samlaugh.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/scripts/zm/zzz_zm_whereami.gsc",
+            "size": 1669,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_whereami.gsc"
+        },
+        {
+            "path": "usermaps/zm_prototype/sp_zm_prototype.ff",
+            "size": 36160,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/sp_zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_prototype/zm_prototype.ff",
+            "size": 41814144,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_prototype.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/as_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/as_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/bp_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/bp_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/br_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/br_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/cz_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/cz_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/en_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/en_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/fc_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fc_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/fj_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fj_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/fr_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fr_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/ge_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ge_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/it_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/it_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/ja_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ja_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/ko_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ko_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/ms_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ms_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/po_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/po_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/ru_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ru_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_protoround.gsc",
+            "size": 712,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_protoround.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_cscprobe.csc",
+            "size": 107,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_cscprobe.csc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_dognudge.gsc",
+            "size": 1486,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_dognudge.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_eggsong.gsc",
+            "size": 3162,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_eggsong.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_exertvoice.gsc",
+            "size": 3065,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_exertvoice.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_favweapon.gsc",
+            "size": 1117,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_favweapon.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_h2_preserve.gsc",
+            "size": 1024,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_h2_preserve.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_m27box.gsc",
+            "size": 731,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_m27box.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_mk2box.gsc",
+            "size": 796,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_mk2box.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_monkeymodel.gsc",
+            "size": 636,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_monkeymodel.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_roundfix.gsc",
+            "size": 666,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_roundfix.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_sfbuoy.gsc",
+            "size": 418,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sfbuoy.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_sfdeathsong.gsc",
+            "size": 1434,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sfdeathsong.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_sfparity.gsc",
+            "size": 1089,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sfparity.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_sumpfdoor.gsc",
+            "size": 4280,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sumpfdoor.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_sumpfjingle.gsc",
+            "size": 1694,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sumpfjingle.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_sumpfperkvo.gsc",
+            "size": 1822,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sumpfperkvo.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_sumpfriser.gsc",
+            "size": 4907,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sumpfriser.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zm_whereami.gsc",
+            "size": 1669,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_whereami.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/scripts/zm/zzz_zz_zzzzzzzsumpfshuffle.gsc",
+            "size": 6472,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zz_zzzzzzzsumpfshuffle.gsc"
+        },
+        {
+            "path": "usermaps/zm_sumpf/sp_zm_sumpf.ff",
+            "size": 37056,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/sp_zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_sumpf/zm_sumpf.ff",
+            "size": 72243136,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_sumpf.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/as_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/as_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/bp_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/bp_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/br_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/br_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/cz_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/cz_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/en_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/en_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/fc_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fc_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/fj_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fj_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/fr_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fr_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/ge_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ge_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/it_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/it_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/ja_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ja_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/ko_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ko_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/ms_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ms_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/po_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/po_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/ru_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ru_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_protoround.gsc",
+            "size": 712,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_protoround.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_crawlerwatch.gsc",
+            "size": 2256,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_crawlerwatch.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_cscprobe.csc",
+            "size": 107,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_cscprobe.csc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_exertvoice.gsc",
+            "size": 3065,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_exertvoice.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_h2_preserve.gsc",
+            "size": 1024,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_h2_preserve.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_mk2box.gsc",
+            "size": 796,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_mk2box.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_monkeymodel.gsc",
+            "size": 636,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_monkeymodel.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_roundfix.gsc",
+            "size": 666,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_roundfix.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_samlaugh.gsc",
+            "size": 774,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_samlaugh.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_sfdeathsong.gsc",
+            "size": 1434,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_sfdeathsong.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_templefall.gsc",
+            "size": 1410,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_templefall.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_templemonkey.gsc",
+            "size": 1429,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_templemonkey.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_templesemtex.gsc",
+            "size": 2287,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_templesemtex.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_templeslide.gsc",
+            "size": 709,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_templeslide.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zm_templespike.gsc",
+            "size": 1590,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_templespike.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/scripts/zm/zzz_zz_zzzzzzzztemplespecials.gsc",
+            "size": 3236,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zz_zzzzzzzztemplespecials.gsc"
+        },
+        {
+            "path": "usermaps/zm_temple/sp_zm_temple.ff",
+            "size": 66048,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/sp_zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_temple/zm_temple.ff",
+            "size": 81438144,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_temple.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/as_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/as_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/bp_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/bp_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/br_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/br_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/cz_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/cz_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/en_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/en_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/fc_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fc_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/fj_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fj_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/fr_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/fr_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/ge_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ge_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/it_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/it_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/ja_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ja_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/ko_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ko_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/ms_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ms_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/po_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/po_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/ru_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/ru_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_protoround.gsc",
+            "size": 712,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_protoround.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_bowiebuy.gsc",
+            "size": 1267,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_bowiebuy.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_boxstart.gsc",
+            "size": 1097,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_boxstart.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_cscprobe.csc",
+            "size": 107,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_cscprobe.csc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_exertvoice.gsc",
+            "size": 3065,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_exertvoice.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_mk2box.gsc",
+            "size": 796,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_mk2box.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_monkeymodel.gsc",
+            "size": 636,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_monkeymodel.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_music.gsc",
+            "size": 5422,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_music.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_quaddescent.gsc",
+            "size": 6294,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_quaddescent.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_quadvo.gsc",
+            "size": 1051,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_quadvo.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_samlaugh.gsc",
+            "size": 774,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_samlaugh.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_theaterdoor.gsc",
+            "size": 4775,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_theaterdoor.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_theaternova.gsc",
+            "size": 1960,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_theaternova.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_trapsnd.gsc",
+            "size": 3614,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_trapsnd.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/scripts/zm/zzz_zm_whereami.gsc",
+            "size": 1669,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zzz_zm_whereami.gsc"
+        },
+        {
+            "path": "usermaps/zm_theater/sp_zm_theater.ff",
+            "size": 57408,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/sp_zm_theater.ff"
+        },
+        {
+            "path": "usermaps/zm_theater/zm_theater.ff",
+            "size": 72659840,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_theater.ff"
+        },
+        {
+            "root": "game",
+            "path": "sound/dlc5_load.all.sabl",
+            "size": 55333232,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/dlc5_load.all.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/dlc5_load.all.sabs",
+            "size": 72255456,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/dlc5_load.all.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_cosmodrome.all.sabl",
+            "size": 182214656,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_cosmodrome.all.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_cosmodrome.all.sabs",
+            "size": 177233920,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_cosmodrome.all.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_cosmodrome.english.sabs",
+            "size": 257007616,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_cosmodrome.english.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_moon.all.sabl",
+            "size": 187209728,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_moon.all.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_moon.all.sabs",
+            "size": 262729728,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_moon.all.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_moon.english.sabl",
+            "size": 102400,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_moon.english.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_moon.english.sabs",
+            "size": 900134912,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_moon.english.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_pentagon.all.sabl",
+            "size": 172058624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_pentagon.all.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_pentagon.all.sabs",
+            "size": 105900032,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_pentagon.all.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_pentagon.english.sabl",
+            "size": 6170624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_pentagon.english.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_pentagon.english.sabs",
+            "size": 233771008,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_pentagon.english.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_temple.all.sabl",
+            "size": 214202368,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_temple.all.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_temple.all.sabs",
+            "size": 185466880,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_temple.all.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_temple.english.sabl",
+            "size": 4272128,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_temple.english.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_temple.english.sabs",
+            "size": 377802752,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_temple.english.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_theater.all.sabl",
+            "size": 201488384,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_theater.all.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_theater.all.sabs",
+            "size": 128491520,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_theater.all.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_theater.english.sabl",
+            "size": 6170624,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_theater.english.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_blops_theater.english.sabs",
+            "size": 263852032,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_blops_theater.english.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_asylum.all.sabl",
+            "size": 249700352,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_asylum.all.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_asylum.all.sabs",
+            "size": 301729792,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_asylum.all.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_asylum.english.sabl",
+            "size": 399360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_asylum.english.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_asylum.english.sabs",
+            "size": 194033664,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_asylum.english.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_factory.all.sabl",
+            "size": 229079040,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_factory.all.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_factory.all.sabs",
+            "size": 292079616,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_factory.all.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_factory.english.sabl",
+            "size": 399360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_factory.english.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_factory.english.sabs",
+            "size": 241799168,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_factory.english.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_prototype.all.sabl",
+            "size": 190363648,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_prototype.all.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_prototype.all.sabs",
+            "size": 287348736,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_prototype.all.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_prototype.english.sabl",
+            "size": 399360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_prototype.english.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_prototype.english.sabs",
+            "size": 182228992,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_prototype.english.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_sumpf.all.sabl",
+            "size": 257742848,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_sumpf.all.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_sumpf.all.sabs",
+            "size": 309192704,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_sumpf.all.sabs"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_sumpf.english.sabl",
+            "size": 399360,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_sumpf.english.sabl"
+        },
+        {
+            "root": "game",
+            "path": "sound/zmb_waw_sumpf.english.sabs",
+            "size": 187899904,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zmb_waw_sumpf.english.sabs"
+        },
+        {
+            "root": "game",
+            "path": "zone/all/mod_load.ipak",
+            "size": 15499264,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/mod_load.ipak"
+        },
+        {
+            "root": "game",
+            "path": "zone/all/zm_asylum.ipak",
+            "size": 217382912,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_asylum.ipak"
+        },
+        {
+            "root": "game",
+            "path": "zone/all/zm_cosmodrome.ipak",
+            "size": 267386880,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_cosmodrome.ipak"
+        },
+        {
+            "root": "game",
+            "path": "zone/all/zm_factory.ipak",
+            "size": 206503936,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_factory.ipak"
+        },
+        {
+            "root": "game",
+            "path": "zone/all/zm_moon.ipak",
+            "size": 257753088,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_moon.ipak"
+        },
+        {
+            "root": "game",
+            "path": "zone/all/zm_pentagon.ipak",
+            "size": 288980992,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_pentagon.ipak"
+        },
+        {
+            "root": "game",
+            "path": "zone/all/zm_prototype.ipak",
+            "size": 161775616,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_prototype.ipak"
+        },
+        {
+            "root": "game",
+            "path": "zone/all/zm_sumpf.ipak",
+            "size": 197132288,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_sumpf.ipak"
+        },
+        {
+            "root": "game",
+            "path": "zone/all/zm_temple.ipak",
+            "size": 300154880,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_temple.ipak"
+        },
+        {
+            "root": "game",
+            "path": "zone/all/zm_theater.ipak",
+            "size": 262733824,
+            "url": "https://github.com/Logo-2K/zombies-declassified/releases/download/beta2-data/zm_theater.ipak"
+        }
+    ]
+}
