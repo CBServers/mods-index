@@ -1,0 +1,8 @@
+{
+    "id": "treyarch_weapons",
+    "type": "mod",
+    "name": "Treyarch Weapons",
+    "author": "k",
+    "description": "Treyarch zombies wonder weapons and guns ported to Infinite Warfare.",
+    "images": ["main.jpg"]
+}
