@@ -5,6 +5,7 @@
     "author": "Logo-2K",
     "version": "beta2",
     "description": "A work-in-progress PC port of Black Ops II's unreleased fifth map pack, bringing nine classic zombies maps to Plutonium.",
+    "images": ["main.jpg"],
     "files": [
         {
             "path": "mods/dlc5/mod.json",

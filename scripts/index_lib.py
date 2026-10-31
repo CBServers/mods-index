@@ -145,7 +145,7 @@ def image_size(data):
     return None
 
 
-def image_error(path, main):
+def image_error(path):
     data = path.read_bytes()
     if len(data) > MAX_IMAGE_BYTES:
         return "is larger than 8 MB"
@@ -157,8 +157,6 @@ def image_error(path, main):
         return f"is a {kind.upper()} with the wrong extension"
     if not width or not height or max(width, height) > 3840:
         return f"is {width}x{height}; the longest side must be at most 3840"
-    if main and abs(width / height - 16 / 9) > 0.02:
-        return f"is {width}x{height}; the first image must be 16:9"
     return None
 
 
@@ -262,13 +260,13 @@ def check_entry(report, entry, games, hosts, schema):
                 ok = False
 
     if entry.folder is not None:
-        for index, name in enumerate(entry.images):
+        for name in entry.images:
             path = entry.folder / name
             if not path.is_file():
                 report.error(f"{entry.where}/{name}", "is listed in images but missing")
                 ok = False
                 continue
-            message = image_error(path, index == 0)
+            message = image_error(path)
             if message:
                 report.error(f"{entry.where}/{name}", message)
                 ok = False
