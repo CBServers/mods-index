@@ -1,0 +1,39 @@
+{
+  "game": "iw",
+  "commit": "124e9c5068edbf4fac6620e1128cf57309de1969",
+  "generatedAt": 1793488751,
+  "items": [
+    {
+      "id": "cp_asylum_sh",
+      "type": "map",
+      "name": "Asylum",
+      "author": "k",
+      "version": "",
+      "description": "Verruckt remastered for Infinite Warfare zombies.",
+      "requires": [],
+      "preview": "https://raw.githubusercontent.com/CBServers/mods-index/124e9c5068edbf4fac6620e1128cf57309de1969/items/iw/cp_asylum_sh/main.jpg",
+      "screenshots": [],
+      "size": 0,
+      "changesGameFiles": false,
+      "addedAt": 1793488663,
+      "updatedAt": 1793488663,
+      "files": []
+    },
+    {
+      "id": "treyarch_weapons",
+      "type": "mod",
+      "name": "Treyarch Weapons",
+      "author": "k",
+      "version": "",
+      "description": "Treyarch zombies wonder weapons and guns ported to Infinite Warfare.",
+      "requires": [],
+      "preview": "https://raw.githubusercontent.com/CBServers/mods-index/124e9c5068edbf4fac6620e1128cf57309de1969/items/iw/treyarch_weapons/main.jpg",
+      "screenshots": [],
+      "size": 0,
+      "changesGameFiles": false,
+      "addedAt": 1793488663,
+      "updatedAt": 1793488663,
+      "files": []
+    }
+  ]
+}
