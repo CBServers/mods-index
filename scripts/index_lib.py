@@ -335,6 +335,9 @@ def check_catalog(report, entries, games, protected=None):
                 while "/" in parent:
                     parent = parent.rsplit("/", 1)[0]
                     directories.setdefault(f"{root}:{parent}", entry.source)
+                if config.get("noUsermaps") and path.startswith("usermaps/"):
+                    report.error(where, "is in usermaps/, which this game's client does not load")
+                    bad.add(entry.source)
                 if root == "game":
                     for folder in config["sweptFolders"]:
                         if path == folder or path.startswith(folder + "/"):

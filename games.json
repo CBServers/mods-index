@@ -46,6 +46,24 @@
             "sweptFolders": [],
             "formerly": "iw4x"
         },
+        "ghosts": {
+            "name": "Call of Duty: Ghosts",
+            "roots": ["game"],
+            "defaultRoot": "game",
+            "gameManifest": "cb-launcher/manifest/ghosts.json",
+            "clientManifests": ["iw6x.json", "iw6x-dev.json"],
+            "sweptFolders": ["data"],
+            "noUsermaps": true
+        },
+        "aw": {
+            "name": "Call of Duty: Advanced Warfare",
+            "roots": ["game"],
+            "defaultRoot": "game",
+            "gameManifest": "cb-launcher/manifest/aw.json",
+            "clientManifests": ["s1x.json", "s1x-dev.json"],
+            "sweptFolders": ["data"],
+            "noUsermaps": true
+        },
         "mwr": {
             "name": "Call of Duty: Modern Warfare Remastered",
             "roots": ["game"],
