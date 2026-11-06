@@ -40,15 +40,18 @@ and we will remove the entry. You do not need to give a reason.
 
 | Folder | Game |
 |---|---|
-| `cod4x` | Call of Duty 4: Modern Warfare |
-| `iw4x` | Call of Duty: Modern Warfare 2 |
-| `iw5` | Call of Duty: Modern Warfare 3 (Plutonium) |
+| `cod1` | Call of Duty |
+| `coduo` | Call of Duty: United Offensive |
+| `cod2` | Call of Duty 2 |
+| `cod4` | Call of Duty 4: Modern Warfare |
+| `mw2` | Call of Duty: Modern Warfare 2 |
+| `mw3` | Call of Duty: Modern Warfare 3 (Plutonium) |
 | `mw2r` | Call of Duty: Modern Warfare 2 Campaign Remastered |
 | `mwr` | Call of Duty: Modern Warfare Remastered |
 | `iw` | Call of Duty: Infinite Warfare |
-| `t4` | Call of Duty: World at War (Plutonium) |
-| `t5` | Call of Duty: Black Ops (Plutonium) |
-| `t6` | Call of Duty: Black Ops II (Plutonium) |
+| `waw` | Call of Duty: World at War (Plutonium) |
+| `bo1` | Call of Duty: Black Ops (Plutonium) |
+| `bo2` | Call of Duty: Black Ops II (Plutonium) |
 
 Black Ops III uses the Steam Workshop and is not listed here.
 
@@ -94,7 +97,7 @@ Each file says where it goes and where to download it from:
 - `path`: where the file goes, relative to the root, with forward slashes. Subfolders are fine.
 - `root`: `storage` or `game`. Optional.
   - `storage` is Plutonium's folder for the game (`%LOCALAPPDATA%\Plutonium\storage\<game>`). It is the default
-    for `t4`, `t5`, `iw5` and `t6`, and is not available for the other games.
+    for `waw`, `bo1`, `mw3` and `bo2`, and is not available for the other games.
   - `game` is the player's game install folder. It is the default for every other game.
 - `size`: the size of the file in bytes.
 - `url`: a direct download link (see Links).
@@ -108,6 +111,10 @@ when they have to (for example `zone/all/` or `raw/`), with these limits:
 - Two entries cannot list the same file.
 
 The launcher shows a "Changes game files" tag on entries with files outside `mods/` and `usermaps/`.
+
+Call of Duty, United Offensive and Call of Duty 2 do not use those two folders. Give the path the game loads
+the file from, such as `main/` for an archive (`.pk3` on Call of Duty and United Offensive, `.iwd` on Call of
+Duty 2). These games never show the tag.
 
 The file name in `path` does not have to match the name in the link, so flat release asset names can land in
 nested folders.

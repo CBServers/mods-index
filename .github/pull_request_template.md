@@ -1,4 +1,4 @@
-**Game:** <!-- items/<game> folder, e.g. t6 -->
+**Game:** <!-- items/<game> folder, e.g. bo2 -->
 **Entry:** <!-- id -->
 **New entry or update:**
 **Original release:** <!-- someone else's work only: a link, and how you have permission or tried to reach the creator -->

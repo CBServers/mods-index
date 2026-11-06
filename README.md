@@ -41,7 +41,7 @@ Hashes are XXH3-64 in the launcher's `utils::hash` format: the little-endian byt
 
 ```json
 {
-  "game": "t6",
+  "game": "bo2",
   "commit": "<main commit the build came from>",
   "generatedAt": 1793500000,
   "items": [
@@ -53,7 +53,7 @@ Hashes are XXH3-64 in the launcher's `utils::hash` format: the little-endian byt
       "version": "beta2",
       "description": "...",
       "requires": [],
-      "preview": "https://raw.githubusercontent.com/CBServers/mods-index/<commit>/items/t6/zombies_declassified/main.jpg",
+      "preview": "https://raw.githubusercontent.com/CBServers/mods-index/<commit>/items/bo2/zombies_declassified/main.jpg",
       "screenshots": ["..."],
       "size": 9728225788,
       "changesGameFiles": true,

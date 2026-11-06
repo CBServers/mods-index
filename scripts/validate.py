@@ -30,7 +30,9 @@ def main():
     base_entries = lib.load_entries_at(args.base) if args.base else {}
     to_download = []
     for entry in valid:
-        changed = lib.check_hash_policy(report, entry, base_entries.get((entry.game, entry.id)), games)
+        former = games["games"][entry.game].get("formerly")
+        base = base_entries.get((entry.game, entry.id)) or base_entries.get((former, entry.id))
+        changed = lib.check_hash_policy(report, entry, base, games)
         to_download += [(entry, file) for file in changed]
 
     if args.base:

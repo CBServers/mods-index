@@ -1,21 +1,50 @@
 {
     "updaterBase": "https://github.com/CBServers/updater/raw/main/updater/",
     "games": {
-        "cod4x": {
+        "cod1": {
+            "name": "Call of Duty",
+            "roots": ["game"],
+            "defaultRoot": "game",
+            "gameManifest": "cb-launcher/manifest/cod1.json",
+            "clientManifests": ["cod1.json", "cod1x.json"],
+            "sweptFolders": [],
+            "noGameFilesTag": true
+        },
+        "coduo": {
+            "name": "Call of Duty: United Offensive",
+            "roots": ["game"],
+            "defaultRoot": "game",
+            "gameManifest": "cb-launcher/manifest/coduo.json",
+            "clientManifests": ["coduo.json", "coduox.json"],
+            "sweptFolders": [],
+            "noGameFilesTag": true
+        },
+        "cod2": {
+            "name": "Call of Duty 2",
+            "roots": ["game"],
+            "defaultRoot": "game",
+            "gameManifest": "cb-launcher/manifest/cod2.json",
+            "clientManifests": ["cod2x.json"],
+            "sweptFolders": [],
+            "noGameFilesTag": true
+        },
+        "cod4": {
             "name": "Call of Duty 4: Modern Warfare",
             "roots": ["game"],
             "defaultRoot": "game",
             "gameManifest": "cb-launcher/manifest/cod4.json",
             "clientManifests": ["iw3x.json", "cod4x-mp.json", "iw3sp-mod.json"],
-            "sweptFolders": []
+            "sweptFolders": [],
+            "formerly": "cod4x"
         },
-        "iw4x": {
+        "mw2": {
             "name": "Call of Duty: Modern Warfare 2",
             "roots": ["game"],
             "defaultRoot": "game",
             "gameManifest": "cb-launcher/manifest/mw2.json",
             "clientManifests": ["iw4x.json"],
-            "sweptFolders": []
+            "sweptFolders": [],
+            "formerly": "iw4x"
         },
         "mwr": {
             "name": "Call of Duty: Modern Warfare Remastered",
@@ -41,37 +70,41 @@
             "clientManifests": ["h2-mod.json"],
             "sweptFolders": ["cdata"]
         },
-        "t4": {
+        "waw": {
             "name": "Call of Duty: World at War",
             "roots": ["storage", "game"],
             "defaultRoot": "storage",
             "gameManifest": "cb-launcher/manifest/waw.json",
             "clientManifests": ["alt-launchers.json"],
-            "sweptFolders": []
+            "sweptFolders": [],
+            "formerly": "t4"
         },
-        "t5": {
+        "bo1": {
             "name": "Call of Duty: Black Ops",
             "roots": ["storage", "game"],
             "defaultRoot": "storage",
             "gameManifest": "cb-launcher/manifest/bo1.json",
             "clientManifests": ["alt-launchers.json"],
-            "sweptFolders": []
+            "sweptFolders": [],
+            "formerly": "t5"
         },
-        "iw5": {
+        "mw3": {
             "name": "Call of Duty: Modern Warfare 3",
             "roots": ["storage", "game"],
             "defaultRoot": "storage",
             "gameManifest": "cb-launcher/manifest/mw3.json",
             "clientManifests": ["alt-launchers.json"],
-            "sweptFolders": []
+            "sweptFolders": [],
+            "formerly": "iw5"
         },
-        "t6": {
+        "bo2": {
             "name": "Call of Duty: Black Ops II",
             "roots": ["storage", "game"],
             "defaultRoot": "storage",
             "gameManifest": "cb-launcher/manifest/bo2.json",
             "clientManifests": ["t6.json"],
-            "sweptFolders": []
+            "sweptFolders": [],
+            "formerly": "t6"
         }
     }
 }
