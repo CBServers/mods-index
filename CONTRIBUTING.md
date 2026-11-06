@@ -48,7 +48,7 @@ and we will remove the entry. You do not need to give a reason.
 | `mw3` | Call of Duty: Modern Warfare 3 (Plutonium) |
 | `ghosts` | Call of Duty: Ghosts (mods only) |
 | `aw` | Call of Duty: Advanced Warfare (mods only) |
-| `mw2r` | Call of Duty: Modern Warfare 2 Campaign Remastered |
+| `mw2r` | Call of Duty: Modern Warfare 2 Campaign Remastered (mods only) |
 | `mwr` | Call of Duty: Modern Warfare Remastered |
 | `iw` | Call of Duty: Infinite Warfare |
 | `waw` | Call of Duty: World at War (Plutonium) |
@@ -114,13 +114,14 @@ when they have to (for example `zone/all/` or `raw/`), with these limits:
 
 The launcher shows a "Changes game files" tag on entries with files outside `mods/` and `usermaps/`.
 
-Call of Duty, United Offensive and Call of Duty 2 do not use those two folders. Give the path the game loads
-the file from, such as `main/` for an archive (`.pk3` on Call of Duty and United Offensive, `.iwd` on Call of
-Duty 2). These games never show the tag.
+Call of Duty, United Offensive and Call of Duty 2 have no `usermaps/` folder, and their installs do not come
+with `mods/`. Give the path the game loads the file from, such as `main/` for an archive (`.pk3` on Call of Duty
+and United Offensive, `.iwd` on Call of Duty 2). A full mod for Call of Duty 2 can go in `mods/<name>/`, and
+players load it with `+set fs_game mods/<name>`. These games never show the tag.
 
-Ghosts and Advanced Warfare have no custom map support, so `usermaps/` paths fail the check. Mods go in
-`mods/<name>/` with a `mod.ff` and load in multiplayer only. Players load them in-game, from the mods menu on
-Ghosts and with the `loadmod` console command on Advanced Warfare.
+Ghosts, Advanced Warfare and Modern Warfare 2 Campaign Remastered do not load `usermaps/`, so those paths fail
+the check. Mods go in `mods/<name>/`. On Ghosts and Advanced Warfare they need a `mod.ff` and load in multiplayer
+only, from the mods menu on Ghosts and with the `loadmod` console command on Advanced Warfare.
 
 The file name in `path` does not have to match the name in the link, so flat release asset names can land in
 nested folders.

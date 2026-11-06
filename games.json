@@ -86,7 +86,8 @@
             "defaultRoot": "game",
             "gameManifest": "cb-launcher/manifest/mw2r.json",
             "clientManifests": ["h2-mod.json"],
-            "sweptFolders": ["cdata"]
+            "sweptFolders": ["cdata"],
+            "noUsermaps": true
         },
         "waw": {
             "name": "Call of Duty: World at War",
