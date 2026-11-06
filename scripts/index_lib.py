@@ -335,6 +335,9 @@ def check_catalog(report, entries, games, protected=None):
                 while "/" in parent:
                     parent = parent.rsplit("/", 1)[0]
                     directories.setdefault(f"{root}:{parent}", entry.source)
+                if config.get("noUsermaps") and path.startswith("usermaps/"):
+                    report.error(where, "is in usermaps/, which this game's client does not load")
+                    bad.add(entry.source)
                 if root == "game":
                     for folder in config["sweptFolders"]:
                         if path == folder or path.startswith(folder + "/"):
@@ -449,9 +452,9 @@ def download_hash(file, hosts, open_url=None, timeout=60, retries=3, chunk_size=
     return format_hash(hasher)
 
 
-def entry_times(where, root=ROOT):
+def entry_times(*where, root=ROOT):
     try:
-        log = git("log", "--format=%ct%x09%s", "--", where, root=root)
+        log = git("log", "--format=%ct%x09%s", "--", *where, root=root)
     except (subprocess.CalledProcessError, FileNotFoundError):
         return 0, 0
     times = [int(line.split("\t", 1)[0]) for line in log.splitlines()
@@ -466,7 +469,9 @@ def dist_item(entry, games, repository, commit, root=ROOT):
         item = {"root": file_root(config, file), "path": file["path"], "size": file["size"], "hash": file["hash"]}
         item.update({"url": file["url"]} if "url" in file else {"parts": file["parts"]})
         files.append(item)
-    added, updated = entry_times(entry.where, root)
+    # A renamed game folder keeps its entries' dates from before the rename.
+    former = [f"items/{config['formerly']}/{entry.id}"] if "formerly" in config else []
+    added, updated = entry_times(entry.where, *former, root=root)
     images = [f"https://raw.githubusercontent.com/{repository}/{commit}/{entry.where}/{name}" for name in entry.images]
     return {
         "id": entry.id,
@@ -479,7 +484,7 @@ def dist_item(entry, games, repository, commit, root=ROOT):
         "preview": images[0] if images else None,
         "screenshots": images[1:],
         "size": sum(file["size"] for file in files),
-        "changesGameFiles": any(file["path"].split("/", 1)[0].lower() not in CONTENT_FOLDERS for file in files),
+        "changesGameFiles": not config.get("noGameFilesTag") and any(file["path"].split("/", 1)[0].lower() not in CONTENT_FOLDERS for file in files),
         "addedAt": added,
         "updatedAt": updated,
         "files": files,
