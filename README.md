@@ -6,6 +6,8 @@ their own hosts.
 
 **Submitting a map or mod:** read [CONTRIBUTING.md](CONTRIBUTING.md).
 
+**Requesting one someone else made:** [open a request](https://github.com/CBServers/mods-index/issues/new?template=mod-request.yml).
+
 ## Layout
 
 ```

@@ -1,0 +1,44 @@
+name: Request a map or mod
+description: Ask for a map or mod to be added to the launcher's list.
+title: "[Request] "
+labels: ["mod request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check the [open requests](https://github.com/CBServers/mods-index/issues?q=is%3Aissue+is%3Aopen+label%3A%22mod+request%22) first. If yours is already there, give it a 👍 instead of opening a new one.
+
+        Someone still has to add the entry, so not every request gets listed, and paid or private releases can't be. If the map or mod is your own, you can [submit it yourself](https://github.com/CBServers/mods-index/blob/main/CONTRIBUTING.md).
+
+        Made something that's listed and want it removed? [Open an issue](https://github.com/CBServers/mods-index/issues/new/choose) instead.
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      description: Black Ops III uses the Steam Workshop and is not listed here.
+      placeholder: Black Ops 2
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Map or mod name
+    validations:
+      required: true
+  - type: input
+    id: creator
+    attributes:
+      label: Creator
+      description: Who made it, if you know.
+  - type: input
+    id: link
+    attributes:
+      label: Where to find it
+      description: A page or download link for it.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Which version, what it needs, or why it would be good to have.

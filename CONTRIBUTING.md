@@ -11,6 +11,31 @@ files stay where you host them; this repository only holds the list.
 Once a maintainer merges it, the hashes are filled in automatically and the entry shows up in the launcher a few
 minutes later.
 
+Want a map or mod someone else made? [Request it](https://github.com/CBServers/mods-index/issues/new?template=mod-request.yml) instead.
+
+## Someone else's work
+
+You can submit a map or mod you did not make when one of these is true:
+
+- The creator agreed, or its license or readme allows sharing.
+- It was released publicly for free with no sharing restriction, and the creator has not said no. This includes
+  old releases whose creator can no longer be reached.
+
+Either way:
+
+- Put the creator in `author`.
+- In the pull request, link the original release and say how you have permission or how you tried to reach the
+  creator.
+- A modified version must say it is modified in its `description` and credit the original.
+
+Not accepted: work the creator has asked not to be shared, readmes that forbid re-uploading, paid, Patreon-only or
+early access releases, and leaked or private builds.
+
+## Removal
+
+If your work is listed and you want it removed, [open an issue](https://github.com/CBServers/mods-index/issues/new/choose)
+and we will remove the entry. You do not need to give a reason.
+
 ## Games
 
 | Folder | Game |
@@ -53,7 +78,7 @@ Black Ops III uses the Steam Workshop and is not listed here.
   for the game.
 - `type`: `map` or `mod`. It only decides where the entry is filtered in the launcher.
 - `name`: the title on the card, up to 64 characters.
-- `author`: you, up to 64 characters.
+- `author`: whoever made it, up to 64 characters.
 - `version`: any text. Change it every time you update your files.
 - `description`: shown on the card and in the details panel. Keep it short.
 - `images`: file names in your entry folder, in order. See below.
@@ -159,3 +184,4 @@ matches fails to install. Publish an update instead.
 - An id that is already taken for the game.
 - Images that break the rules above.
 - A map or mod that does not load.
+- Work the creator has asked not to be shared, or paid or private releases.
