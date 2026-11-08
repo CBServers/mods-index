@@ -1,0 +1,1412 @@
+{
+    "id": "specops",
+    "type": "mod",
+    "name": "Special Ops",
+    "author": "alicealys",
+    "version": "3.0.4",
+    "description": "The original Modern Warfare 2 Special Ops missions, ported to MW2CR. Load SPECIAL OPS from the MODS menu in game.\n\n19 of the 23 missions are playable:\n[list][*]Alpha: The Pit, Sniper Fi, O Cristo Redentor, Evasion\n[*]Bravo: Body Count, Bomb Squad, Race\n[*]Charlie: Hidden, Breach & Clear, Time Trial, Homeland Security, Snatch & Grab\n[*]Delta: Wardriving, Acceptable Losses, Terminal, Estate Takedown\n[*]Echo: Wetwork, High Explosive, Armor Piercing[/list]\nSource and bug reports: [url=https://github.com/alicealys/h2-specops-mod]github.com/alicealys/h2-specops-mod[/url]",
+    "images": ["main.jpg", "pit.jpg", "race.jpg", "favela.jpg", "evasion.jpg"],
+    "requires": [],
+    "files": [
+        {
+            "path": "mods/specops/aitype/enemy_juggernaut_arab.gsc",
+            "size": 1240,
+            "url": "cdn:mods/mw2r/specops/aitype/enemy_juggernaut_arab.gsc"
+        },
+        {
+            "path": "mods/specops/aitype/enemy_juggernaut_russian.gsc",
+            "size": 1240,
+            "url": "cdn:mods/mw2r/specops/aitype/enemy_juggernaut_russian.gsc"
+        },
+        {
+            "path": "mods/specops/animscripts/traverse/window_over_40_turnr.gsc",
+            "size": 837,
+            "url": "cdn:mods/mw2r/specops/animscripts/traverse/window_over_40_turnr.gsc"
+        },
+        {
+            "path": "mods/specops/animscripts/traverse/window_over_40_walk.gsc",
+            "size": 837,
+            "url": "cdn:mods/mw2r/specops/animscripts/traverse/window_over_40_walk.gsc"
+        },
+        {
+            "path": "mods/specops/common/stats.lua",
+            "size": 1725,
+            "url": "cdn:mods/mw2r/specops/common/stats.lua"
+        },
+        {
+            "path": "mods/specops/info.json",
+            "size": 134,
+            "url": "cdn:mods/mw2r/specops/info.json"
+        },
+        {
+            "path": "mods/specops/maps/so_assault_oilrig.gsc",
+            "size": 35,
+            "url": "cdn:mods/mw2r/specops/maps/so_assault_oilrig.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_defense_invasion.gsc",
+            "size": 15206,
+            "url": "cdn:mods/mw2r/specops/maps/so_defense_invasion.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_defense_invasion_code.gsc",
+            "size": 48895,
+            "url": "cdn:mods/mw2r/specops/maps/so_defense_invasion_code.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_defuse_favela_escape.gsc",
+            "size": 43,
+            "url": "cdn:mods/mw2r/specops/maps/so_defuse_favela_escape.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_download_arcadia.gsc",
+            "size": 37,
+            "url": "cdn:mods/mw2r/specops/maps/so_download_arcadia.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_escape_airport.gsc",
+            "size": 37,
+            "url": "cdn:mods/mw2r/specops/maps/so_escape_airport.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_forest_contingency.gsc",
+            "size": 1387,
+            "url": "cdn:mods/mw2r/specops/maps/so_forest_contingency.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_hidden_scoutsniper.gsc",
+            "size": 21624,
+            "url": "cdn:mods/mw2r/specops/maps/so_hidden_scoutsniper.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_hidden_scoutsniper_anim.gsc",
+            "size": 2105,
+            "url": "cdn:mods/mw2r/specops/maps/so_hidden_scoutsniper_anim.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_hidden_scoutsniper_code.gsc",
+            "size": 37856,
+            "url": "cdn:mods/mw2r/specops/maps/so_hidden_scoutsniper_code.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_intel_boneyard.gsc",
+            "size": 341,
+            "url": "cdn:mods/mw2r/specops/maps/so_intel_boneyard.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_juggernauts_favela.gsc",
+            "size": 1351,
+            "url": "cdn:mods/mw2r/specops/maps/so_juggernauts_favela.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_killspree_favela.gsc",
+            "size": 36,
+            "url": "cdn:mods/mw2r/specops/maps/so_killspree_favela.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_killspree_invasion.gsc",
+            "size": 10480,
+            "url": "cdn:mods/mw2r/specops/maps/so_killspree_invasion.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_killspree_invasion_code.gsc",
+            "size": 32259,
+            "url": "cdn:mods/mw2r/specops/maps/so_killspree_invasion_code.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_killspree_trainer.gsc",
+            "size": 34180,
+            "url": "cdn:mods/mw2r/specops/maps/so_killspree_trainer.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_rooftop_contingency.gsc",
+            "size": 41,
+            "url": "cdn:mods/mw2r/specops/maps/so_rooftop_contingency.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_sabotage_cliffhanger.gsc",
+            "size": 4517,
+            "url": "cdn:mods/mw2r/specops/maps/so_sabotage_cliffhanger.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_sabotage_cliffhanger_code.gsc",
+            "size": 22348,
+            "url": "cdn:mods/mw2r/specops/maps/so_sabotage_cliffhanger_code.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_showers_gulag.gsc",
+            "size": 11112,
+            "url": "cdn:mods/mw2r/specops/maps/so_showers_gulag.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_snowrace1_cliffhanger.gsc",
+            "size": 41,
+            "url": "cdn:mods/mw2r/specops/maps/so_snowrace1_cliffhanger.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_snowrace2_cliffhanger.gsc",
+            "size": 41,
+            "url": "cdn:mods/mw2r/specops/maps/so_snowrace2_cliffhanger.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_takeover_estate.gsc",
+            "size": 1560,
+            "url": "cdn:mods/mw2r/specops/maps/so_takeover_estate.gsc"
+        },
+        {
+            "path": "mods/specops/maps/so_takeover_oilrig.gsc",
+            "size": 3569,
+            "url": "cdn:mods/mw2r/specops/maps/so_takeover_oilrig.gsc"
+        },
+        {
+            "path": "mods/specops/maps/_ambient.gsc",
+            "size": 11681,
+            "url": "cdn:mods/mw2r/specops/maps/_ambient.gsc"
+        },
+        {
+            "path": "mods/specops/maps/_cinematography.gsc",
+            "size": 23113,
+            "url": "cdn:mods/mw2r/specops/maps/_cinematography.gsc"
+        },
+        {
+            "path": "mods/specops/maps/_equalizer.gsc",
+            "size": 47663,
+            "url": "cdn:mods/mw2r/specops/maps/_equalizer.gsc"
+        },
+        {
+            "path": "mods/specops/maps/_idle.gsc",
+            "size": 11761,
+            "url": "cdn:mods/mw2r/specops/maps/_idle.gsc"
+        },
+        {
+            "path": "mods/specops/maps/_leak.gsc",
+            "size": 7149,
+            "url": "cdn:mods/mw2r/specops/maps/_leak.gsc"
+        },
+        {
+            "path": "mods/specops/maps/_pmc.gsc",
+            "size": 55582,
+            "url": "cdn:mods/mw2r/specops/maps/_pmc.gsc"
+        },
+        {
+            "path": "mods/specops/maps/_radiation.gsc",
+            "size": 10251,
+            "url": "cdn:mods/mw2r/specops/maps/_radiation.gsc"
+        },
+        {
+            "path": "mods/specops/maps/_specialops.gsc",
+            "size": 3955,
+            "url": "cdn:mods/mw2r/specops/maps/_specialops.gsc"
+        },
+        {
+            "path": "mods/specops/maps/_specialops_code.gsc",
+            "size": 89,
+            "url": "cdn:mods/mw2r/specops/maps/_specialops_code.gsc"
+        },
+        {
+            "path": "mods/specops/scripts/specops/gsc.lua",
+            "size": 1033,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/gsc.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/main.lua",
+            "size": 1381,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/main.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_assault_oilrig.lua",
+            "size": 9948,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_assault_oilrig.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_defense_invasion.lua",
+            "size": 1389,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_defense_invasion.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_defuse_favela_escape.lua",
+            "size": 12816,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_defuse_favela_escape.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_download_arcadia.lua",
+            "size": 42537,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_download_arcadia.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_escape_airport.lua",
+            "size": 21055,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_escape_airport.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_forest_contingency.lua",
+            "size": 7516,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_forest_contingency.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_hidden_scoutsniper.lua",
+            "size": 1570,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_hidden_scoutsniper.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_intel_boneyard.lua",
+            "size": 682,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_intel_boneyard.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_juggernauts_favela.lua",
+            "size": 895,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_juggernauts_favela.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_killspree_favela.lua",
+            "size": 15451,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_killspree_favela.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_killspree_invasion.lua",
+            "size": 1730,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_killspree_invasion.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_killspree_trainer.lua",
+            "size": 1650,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_killspree_trainer.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_rooftop_contingency.lua",
+            "size": 36252,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_rooftop_contingency.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_sabotage_cliffhanger.lua",
+            "size": 956,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_sabotage_cliffhanger.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_showers_gulag.lua",
+            "size": 330,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_showers_gulag.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_snowrace1_cliffhanger.lua",
+            "size": 9358,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_snowrace1_cliffhanger.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_snowrace2_cliffhanger.lua",
+            "size": 2759,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_snowrace2_cliffhanger.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_takeover_estate.lua",
+            "size": 587,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_takeover_estate.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/maps/so_takeover_oilrig.lua",
+            "size": 973,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/maps/so_takeover_oilrig.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/specops.lua",
+            "size": 3473,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/specops.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/utils.lua",
+            "size": 39262,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/utils.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops/__init__.lua",
+            "size": 154,
+            "url": "cdn:mods/mw2r/specops/scripts/specops/__init__.lua"
+        },
+        {
+            "path": "mods/specops/scripts/specops.gsc",
+            "size": 2720,
+            "url": "cdn:mods/mw2r/specops/scripts/specops.gsc"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_civ_kill_warning_01_r.flac",
+            "size": 69510,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_civ_kill_warning_01_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_civ_kill_warning_02_r.flac",
+            "size": 66798,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_civ_kill_warning_02_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_civ_kill_warning_03_r.flac",
+            "size": 82952,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_civ_kill_warning_03_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_fail_bleedout_01.flac",
+            "size": 85818,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_fail_bleedout_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_fail_bleedout_02.flac",
+            "size": 82825,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_fail_bleedout_02.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_fail_generic_01.flac",
+            "size": 68998,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_fail_generic_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_fail_generic_02.flac",
+            "size": 86306,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_fail_generic_02.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_fail_generic_jerk_01.flac",
+            "size": 91869,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_fail_generic_jerk_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_fail_generic_jerk_02.flac",
+            "size": 72594,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_fail_generic_jerk_02.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_fail_time_01.flac",
+            "size": 73941,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_fail_time_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_fail_time_02.flac",
+            "size": 80415,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_fail_time_02.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_plyr_prep_01.flac",
+            "size": 34027,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_plyr_prep_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_plyr_prep_02.flac",
+            "size": 25720,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_plyr_prep_02.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_1more_01_r.flac",
+            "size": 26622,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_1more_01_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_1more_02_r.flac",
+            "size": 32212,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_1more_02_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_1more_03_r.flac",
+            "size": 35764,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_1more_03_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_2more_01_r.flac",
+            "size": 26599,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_2more_01_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_2more_02_r.flac",
+            "size": 31406,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_2more_02_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_2more_03_r.flac",
+            "size": 33097,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_2more_03_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_3more_01_r.flac",
+            "size": 28962,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_3more_01_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_3more_02_r.flac",
+            "size": 32605,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_3more_02_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_3more_03_r.flac",
+            "size": 34328,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_3more_03_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_3quarter_01.flac",
+            "size": 52232,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_3quarter_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_3quarter_02.flac",
+            "size": 50949,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_3quarter_02.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_3quarter_03.flac",
+            "size": 53483,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_3quarter_03.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_4more_01_r.flac",
+            "size": 31100,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_4more_01_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_4more_02_r.flac",
+            "size": 33196,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_4more_02_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_4more_03_r.flac",
+            "size": 39140,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_4more_03_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_5more_01_r.flac",
+            "size": 27603,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_5more_01_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_5more_02_r.flac",
+            "size": 32479,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_5more_02_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_5more_03_r.flac",
+            "size": 32820,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_5more_03_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_half_01_r.flac",
+            "size": 30594,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_half_01_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_half_02_r.flac",
+            "size": 40170,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_half_02_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_half_03_r.flac",
+            "size": 34372,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_half_03_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_quarter_01_r.flac",
+            "size": 52315,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_quarter_01_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_quarter_02_r.flac",
+            "size": 59545,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_quarter_02_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_progress_quarter_03_r.flac",
+            "size": 55123,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_progress_quarter_03_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_success_best_01_r.flac",
+            "size": 86947,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_success_best_01_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_success_best_02_r.flac",
+            "size": 71457,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_success_best_02_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_success_best_03_r.flac",
+            "size": 74438,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_success_best_03_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_success_best_04_r.flac",
+            "size": 79493,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_success_best_04_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_success_generic_01.flac",
+            "size": 40806,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_success_generic_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_success_generic_02.flac",
+            "size": 37130,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_success_generic_02.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_success_generic_03.flac",
+            "size": 46556,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_success_generic_03.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_success_jerk_01.flac",
+            "size": 54262,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_success_jerk_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_success_jerk_02_r.flac",
+            "size": 52922,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_success_jerk_02_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_success_jerk_03_r.flac",
+            "size": 51913,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_success_jerk_03_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_time_generic_01.flac",
+            "size": 42449,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_time_generic_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_time_generic_02.flac",
+            "size": 41841,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_time_generic_02.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_time_generic_03.flac",
+            "size": 40616,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_time_generic_03.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_time_hurry_01.flac",
+            "size": 57931,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_time_hurry_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_time_hurry_02.flac",
+            "size": 68602,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_time_hurry_02.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_time_hurry_03.flac",
+            "size": 66031,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_time_hurry_03.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_time_status_good_01_r.flac",
+            "size": 61478,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_time_status_good_01_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_time_status_good_02_r.flac",
+            "size": 88177,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_time_status_good_02_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_time_status_good_03_r.flac",
+            "size": 87031,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_time_status_good_03_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_time_status_late_01_r.flac",
+            "size": 68551,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_time_status_late_01_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_time_status_late_02_r.flac",
+            "size": 76675,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_time_status_late_02_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/battlechatter/so_tf_1_time_status_late_03_r.flac",
+            "size": 80989,
+            "url": "cdn:mods/mw2r/specops/sound/battlechatter/so_tf_1_time_status_late_03_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/music/hz_desertdrne_scoutsniper_lr_1.flac",
+            "size": 15975488,
+            "url": "cdn:mods/mw2r/specops/sound/music/hz_desertdrne_scoutsniper_lr_1.flac"
+        },
+        {
+            "path": "mods/specops/sound/music/hz_estatebaseclr_scoutsniper_lr_1.flac",
+            "size": 10149904,
+            "url": "cdn:mods/mw2r/specops/sound/music/hz_estatebaseclr_scoutsniper_lr_1.flac"
+        },
+        {
+            "path": "mods/specops/sound/music/hz_mp_spawn_05.flac",
+            "size": 1479064,
+            "url": "cdn:mods/mw2r/specops/sound/music/hz_mp_spawn_05.flac"
+        },
+        {
+            "path": "mods/specops/sound/music/hz_mp_suspense_arcadia_panic_LR.flac",
+            "size": 1217500,
+            "url": "cdn:mods/mw2r/specops/sound/music/hz_mp_suspense_arcadia_panic_LR.flac"
+        },
+        {
+            "path": "mods/specops/sound/music/hz_mp_suspense_gulag_intro_LR.flac",
+            "size": 877746,
+            "url": "cdn:mods/mw2r/specops/sound/music/hz_mp_suspense_gulag_intro_LR.flac"
+        },
+        {
+            "path": "mods/specops/sound/music/hz_mp_time_out_winning.flac",
+            "size": 1608650,
+            "url": "cdn:mods/mw2r/specops/sound/music/hz_mp_time_out_winning.flac"
+        },
+        {
+            "path": "mods/specops/sound/music/mus_so_main_menu.flac",
+            "size": 18317703,
+            "url": "cdn:mods/mw2r/specops/sound/music/mus_so_main_menu.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_mct_5_1_r.flac",
+            "size": 173144,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_mct_5_1_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru1_5_9.flac",
+            "size": 251083,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru1_5_9.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru1_w1_1.flac",
+            "size": 50527,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru1_w1_1.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru1_w1_13.flac",
+            "size": 75434,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru1_w1_13.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru1_w1_4.flac",
+            "size": 93035,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru1_w1_4.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru1_w1_6.flac",
+            "size": 163277,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru1_w1_6.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru1_w1_8.flac",
+            "size": 77606,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru1_w1_8.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru1_w3_1.flac",
+            "size": 97543,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru1_w3_1.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru1_w3_3.flac",
+            "size": 124922,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru1_w3_3.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru1_w5_1.flac",
+            "size": 257983,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru1_w5_1.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru1_w5_3.flac",
+            "size": 193787,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru1_w5_3.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru1_w5_5.flac",
+            "size": 164865,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru1_w5_5.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_5_11.flac",
+            "size": 202775,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_5_11.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_5_6.flac",
+            "size": 144304,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_5_6.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_5_8.flac",
+            "size": 77444,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_5_8.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_11.flac",
+            "size": 54290,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_11.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_15.flac",
+            "size": 46439,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_15.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_2.flac",
+            "size": 27300,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_2.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_3.flac",
+            "size": 56784,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_3.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_5.flac",
+            "size": 144890,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_5.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_7.flac",
+            "size": 131942,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_7.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_9.flac",
+            "size": 149940,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_w1_9.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_w3_2.flac",
+            "size": 99644,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_w3_2.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_w3_4.flac",
+            "size": 198979,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_w3_4.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_w5_13.flac",
+            "size": 69974,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_w5_13.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_w5_2.flac",
+            "size": 95398,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_w5_2.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru2_w5_4.flac",
+            "size": 137205,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru2_w5_4.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru3_5_10.flac",
+            "size": 98953,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru3_5_10.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru3_w1_10.flac",
+            "size": 141137,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru3_w1_10.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru3_w1_12.flac",
+            "size": 70845,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru3_w1_12.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru3_w1_14.flac",
+            "size": 196760,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru3_w1_14.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru3_w1_16.flac",
+            "size": 166849,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru3_w1_16.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru3_w4_1.flac",
+            "size": 64271,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru3_w4_1.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru3_w4_3.flac",
+            "size": 152120,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru3_w4_3.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru3_w4_5.flac",
+            "size": 96253,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru3_w4_5.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru4_w4_2.flac",
+            "size": 35283,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru4_w4_2.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/cliffhanger/cliff_ru4_w4_4.flac",
+            "size": 363477,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/cliffhanger/cliff_ru4_w4_4.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_attacksouth_01.flac",
+            "size": 147819,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_attacksouth_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_bmpspottedyou_01.flac",
+            "size": 153507,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_bmpspottedyou_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_bmpspottedyou_02.flac",
+            "size": 132133,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_bmpspottedyou_02.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_dronedirect_01.flac",
+            "size": 128884,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_dronedirect_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_dronenotice_01.flac",
+            "size": 117621,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_dronenotice_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_dronespotted_01.flac",
+            "size": 153579,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_dronespotted_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_dronetarget_01.flac",
+            "size": 121840,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_dronetarget_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_hostilesouth_01.flac",
+            "size": 155106,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_hostilesouth_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_mobilesouth_01.flac",
+            "size": 153581,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_mobilesouth_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_niceone_01.flac",
+            "size": 52708,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_niceone_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_niceone_01b.flac",
+            "size": 60333,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_niceone_01b.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_stingerdiner_01.flac",
+            "size": 154792,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_stingerdiner_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_stingerdiner_02.flac",
+            "size": 154714,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_stingerdiner_02.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_stingernates_01.flac",
+            "size": 172366,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_stingernates_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_stingernates_02.flac",
+            "size": 121297,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_stingernates_02.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_defense/so_def_inv_thermaloptics_01.flac",
+            "size": 133401,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_defense/so_def_inv_thermaloptics_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_2_1_r.flac",
+            "size": 141431,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_2_1_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_2_2_r.flac",
+            "size": 155043,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_2_2_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_4_1_r.flac",
+            "size": 152179,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_4_1_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_4_2_r.flac",
+            "size": 176291,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_4_2_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_4_3_r.flac",
+            "size": 179659,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_4_3_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_5_1_r.flac",
+            "size": 225965,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_5_1_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_5_2_r.flac",
+            "size": 98840,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_5_2_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_5_3_r.flac",
+            "size": 128807,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_5_3_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_5_4_r.flac",
+            "size": 107085,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_5_4_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_5_5_r.flac",
+            "size": 109186,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_hqr_5_5_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_str_1_1_r.flac",
+            "size": 144701,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_str_1_1_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_str_1_2_r.flac",
+            "size": 176263,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_str_1_2_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_str_1_3_r.flac",
+            "size": 122348,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_str_1_3_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_str_3_1_r.flac",
+            "size": 113361,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_str_3_1_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_str_3_2_r.flac",
+            "size": 107710,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_str_3_2_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_str_3_3_r.flac",
+            "size": 105599,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_str_3_3_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_dwnld/so_dwnld_str_3_4_r.flac",
+            "size": 101291,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_dwnld/so_dwnld_str_3_4_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_beautiful_01.flac",
+            "size": 25841,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_beautiful_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_beautiful_01b.flac",
+            "size": 23460,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_beautiful_01b.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_beautiful_01c.flac",
+            "size": 27047,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_beautiful_01c.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_beautiful_01d.flac",
+            "size": 25206,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_beautiful_01d.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_beautiful_01e.flac",
+            "size": 25839,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_beautiful_01e.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_do_better_01.flac",
+            "size": 35373,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_do_better_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_do_better_01b.flac",
+            "size": 41352,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_do_better_01b.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_do_better_01c.flac",
+            "size": 35169,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_do_better_01c.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_goodnight_01.flac",
+            "size": 26636,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_goodnight_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_goodnight_01b.flac",
+            "size": 28443,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_goodnight_01b.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_goodnight_01c.flac",
+            "size": 28923,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_goodnight_01c.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_gst_double_kill_01b_r.flac",
+            "size": 49319,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_gst_double_kill_01b_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_gst_double_kill_01_r.flac",
+            "size": 59750,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_gst_double_kill_01_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_gst_triple_kill_01b_r.flac",
+            "size": 72769,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_gst_triple_kill_01b_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_gst_triple_kill_01c_r.flac",
+            "size": 69544,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_gst_triple_kill_01c_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_gst_triple_kill_01_r.flac",
+            "size": 76713,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_gst_triple_kill_01_r.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_hesdown_01.flac",
+            "size": 29073,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_hesdown_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_hesdown_01b.flac",
+            "size": 29924,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_hesdown_01b.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_hesdown_01c.flac",
+            "size": 25534,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_hesdown_01c.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_neutralized_01.flac",
+            "size": 44876,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_neutralized_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_neutralized_01b.flac",
+            "size": 53132,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_neutralized_01b.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_neutralized_01c.flac",
+            "size": 42754,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_neutralized_01c.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_noisy_01.flac",
+            "size": 31704,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_noisy_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_noisy_01b.flac",
+            "size": 34021,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_noisy_01b.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_noisy_01c.flac",
+            "size": 30428,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_noisy_01c.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_noisy_01d.flac",
+            "size": 30663,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_noisy_01d.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_noisy_01e.flac",
+            "size": 28186,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_noisy_01e.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_noisy_01f.flac",
+            "size": 31184,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_noisy_01f.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_patrol_hint_01.flac",
+            "size": 203414,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_patrol_hint_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_perfect_01.flac",
+            "size": 29139,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_perfect_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_perfect_01b.flac",
+            "size": 29320,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_perfect_01b.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_perfect_01c.flac",
+            "size": 31983,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_perfect_01c.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_rad_warning_01.flac",
+            "size": 188540,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_rad_warning_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_sloppy_01.flac",
+            "size": 37397,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_sloppy_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_sloppy_01b.flac",
+            "size": 47217,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_sloppy_01b.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_sniper_hint_01.flac",
+            "size": 149729,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_sniper_hint_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_tango_down_01.flac",
+            "size": 36764,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_tango_down_01.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_tango_down_01b.flac",
+            "size": 33124,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_tango_down_01b.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_hidden/so_hid_ghil_tango_down_01c.flac",
+            "size": 37302,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_hidden/so_hid_ghil_tango_down_01c.flac"
+        },
+        {
+            "path": "mods/specops/sound/voiceovers/so_intel/so_intel_hqr_1_1_r.flac",
+            "size": 268981,
+            "url": "cdn:mods/mw2r/specops/sound/voiceovers/so_intel/so_intel_hqr_1_1_r.flac"
+        },
+        {
+            "path": "mods/specops/ui_scripts/specops_ui/hud/main.lua",
+            "size": 2940,
+            "url": "cdn:mods/mw2r/specops/ui_scripts/specops_ui/hud/main.lua"
+        },
+        {
+            "path": "mods/specops/ui_scripts/specops_ui/main.lua",
+            "size": 2332,
+            "url": "cdn:mods/mw2r/specops/ui_scripts/specops_ui/main.lua"
+        },
+        {
+            "path": "mods/specops/ui_scripts/specops_ui/menus/data/acts.lua",
+            "size": 11622,
+            "url": "cdn:mods/mw2r/specops/ui_scripts/specops_ui/menus/data/acts.lua"
+        },
+        {
+            "path": "mods/specops/ui_scripts/specops_ui/menus/levelselect.lua",
+            "size": 14800,
+            "url": "cdn:mods/mw2r/specops/ui_scripts/specops_ui/menus/levelselect.lua"
+        },
+        {
+            "path": "mods/specops/ui_scripts/specops_ui/popups/eog_summary.lua",
+            "size": 7864,
+            "url": "cdn:mods/mw2r/specops/ui_scripts/specops_ui/popups/eog_summary.lua"
+        },
+        {
+            "path": "mods/specops/ui_scripts/specops_ui/popups/new_record.lua",
+            "size": 849,
+            "url": "cdn:mods/mw2r/specops/ui_scripts/specops_ui/popups/new_record.lua"
+        },
+        {
+            "path": "mods/specops/ui_scripts/specops_ui/popups/new_stars.lua",
+            "size": 4464,
+            "url": "cdn:mods/mw2r/specops/ui_scripts/specops_ui/popups/new_stars.lua"
+        },
+        {
+            "path": "mods/specops/ui_scripts/specops_ui/__init__.lua",
+            "size": 48,
+            "url": "cdn:mods/mw2r/specops/ui_scripts/specops_ui/__init__.lua"
+        },
+        {
+            "path": "mods/specops/video/default.bik",
+            "size": 772,
+            "url": "cdn:mods/mw2r/specops/video/default.bik"
+        },
+        {
+            "path": "mods/specops/video/mission_select_bg_scoutsniper.bik",
+            "size": 32462712,
+            "url": "cdn:mods/mw2r/specops/video/mission_select_bg_scoutsniper.bik"
+        },
+        {
+            "path": "mods/specops/zone/common_specialops.ff",
+            "size": 1848063,
+            "url": "cdn:mods/mw2r/specops/zone/common_specialops.ff"
+        },
+        {
+            "path": "mods/specops/zone/patch_common_specops.ff",
+            "size": 3724,
+            "url": "cdn:mods/mw2r/specops/zone/patch_common_specops.ff"
+        },
+        {
+            "path": "mods/specops/zone/rup_specops.ff",
+            "size": 18500,
+            "url": "cdn:mods/mw2r/specops/zone/rup_specops.ff"
+        },
+        {
+            "path": "mods/specops/zone/rus_specops.ff",
+            "size": 18500,
+            "url": "cdn:mods/mw2r/specops/zone/rus_specops.ff"
+        },
+        {
+            "path": "mods/specops/zone/sch_specops.ff",
+            "size": 14704,
+            "url": "cdn:mods/mw2r/specops/zone/sch_specops.ff"
+        },
+        {
+            "path": "mods/specops/zone/scoutsniper.ff",
+            "size": 574736936,
+            "url": "cdn:mods/mw2r/specops/zone/scoutsniper.ff"
+        },
+        {
+            "path": "mods/specops/zone/scoutsniper.pak",
+            "size": 4353956892,
+            "url": "cdn:mods/mw2r/specops/zone/scoutsniper.pak"
+        },
+        {
+            "path": "mods/specops/zone/so_assault_oilrig.ff",
+            "size": 10466,
+            "url": "cdn:mods/mw2r/specops/zone/so_assault_oilrig.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_defense_invasion.ff",
+            "size": 12616,
+            "url": "cdn:mods/mw2r/specops/zone/so_defense_invasion.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_defuse_cliffhanger.ff",
+            "size": 172,
+            "url": "cdn:mods/mw2r/specops/zone/so_defuse_cliffhanger.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_defuse_favela_escape.ff",
+            "size": 68975192,
+            "url": "cdn:mods/mw2r/specops/zone/so_defuse_favela_escape.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_defuse_favela_escape.pak",
+            "size": 32902420,
+            "url": "cdn:mods/mw2r/specops/zone/so_defuse_favela_escape.pak"
+        },
+        {
+            "path": "mods/specops/zone/so_download_arcadia.ff",
+            "size": 10500156,
+            "url": "cdn:mods/mw2r/specops/zone/so_download_arcadia.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_escape_airport.ff",
+            "size": 48983172,
+            "url": "cdn:mods/mw2r/specops/zone/so_escape_airport.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_forest_contingency.ff",
+            "size": 8885,
+            "url": "cdn:mods/mw2r/specops/zone/so_forest_contingency.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_hidden_scoutsniper.ff",
+            "size": 244298948,
+            "url": "cdn:mods/mw2r/specops/zone/so_hidden_scoutsniper.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_intel_boneyard.ff",
+            "size": 90952956,
+            "url": "cdn:mods/mw2r/specops/zone/so_intel_boneyard.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_juggernauts_favela.ff",
+            "size": 80577540,
+            "url": "cdn:mods/mw2r/specops/zone/so_juggernauts_favela.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_killspree_favela.ff",
+            "size": 19796968,
+            "url": "cdn:mods/mw2r/specops/zone/so_killspree_favela.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_killspree_invasion.ff",
+            "size": 16908139,
+            "url": "cdn:mods/mw2r/specops/zone/so_killspree_invasion.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_killspree_trainer.ff",
+            "size": 249007,
+            "url": "cdn:mods/mw2r/specops/zone/so_killspree_trainer.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_rooftop_contingency.ff",
+            "size": 33347838,
+            "url": "cdn:mods/mw2r/specops/zone/so_rooftop_contingency.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_sabotage_cliffhanger.ff",
+            "size": 23197088,
+            "url": "cdn:mods/mw2r/specops/zone/so_sabotage_cliffhanger.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_showers_gulag.ff",
+            "size": 14864,
+            "url": "cdn:mods/mw2r/specops/zone/so_showers_gulag.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_snowrace1_cliffhanger.ff",
+            "size": 10640,
+            "url": "cdn:mods/mw2r/specops/zone/so_snowrace1_cliffhanger.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_snowrace2_cliffhanger.ff",
+            "size": 13160,
+            "url": "cdn:mods/mw2r/specops/zone/so_snowrace2_cliffhanger.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_takeover_estate.ff",
+            "size": 41970702,
+            "url": "cdn:mods/mw2r/specops/zone/so_takeover_estate.ff"
+        },
+        {
+            "path": "mods/specops/zone/so_takeover_oilrig.ff",
+            "size": 92224410,
+            "url": "cdn:mods/mw2r/specops/zone/so_takeover_oilrig.ff"
+        },
+        {
+            "path": "mods/specops/zone/specops.ff",
+            "size": 24193844,
+            "url": "cdn:mods/mw2r/specops/zone/specops.ff"
+        },
+        {
+            "path": "mods/specops/zones.csv",
+            "size": 50,
+            "url": "cdn:mods/mw2r/specops/zones.csv"
+        }
+    ]
+}

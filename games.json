@@ -84,7 +84,7 @@
             "name": "Call of Duty: Modern Warfare 2 Campaign Remastered",
             "roots": ["game"],
             "defaultRoot": "game",
-            "gameManifest": "cb-launcher/manifest/mw2r.json",
+            "gameManifest": "cb-launcher-dev/manifest/mw2r.json",
             "clientManifests": ["h2-mod.json"],
             "sweptFolders": ["cdata"],
             "noUsermaps": true
