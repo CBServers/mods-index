@@ -5,27 +5,35 @@
     "author": "alicealys",
     "version": "1.0",
     "description": "Chinatown from Modern Warfare Remastered as a Survival map. Requires the Survival mod; pick it in Game Setup's map selection.\n\nSource and bug reports: [url=https://github.com/alicealys/h2-survival-mod]github.com/alicealys/h2-survival-mod[/url]",
-    "images": ["main.jpg"],
-    "requires": ["survival"],
+    "images": [
+        "main.jpg"
+    ],
+    "requires": [
+        "survival"
+    ],
     "files": [
         {
             "path": "mods/survival/maps/so_survival_mp_carentan.gsc",
             "size": 832,
+            "hash": "09768FB723314DA4",
             "url": "cdn:mods/mw2r/survival_carentan/maps/so_survival_mp_carentan.gsc"
         },
         {
             "path": "mods/survival/zone/mp_carentan.ff",
             "size": 422678692,
+            "hash": "2B27E130ACA17CBC",
             "url": "cdn:mods/mw2r/survival_carentan/zone/mp_carentan.ff"
         },
         {
             "path": "mods/survival/zone/mp_carentan.pak",
             "size": 3642680072,
+            "hash": "8E5F7F847AE4B681",
             "url": "cdn:mods/mw2r/survival_carentan/zone/mp_carentan.pak"
         },
         {
             "path": "mods/survival/zone/so_survival_mp_carentan.ff",
             "size": 11644,
+            "hash": "E3DCC01A90924677",
             "url": "cdn:mods/mw2r/survival_carentan/zone/so_survival_mp_carentan.ff"
         }
     ]

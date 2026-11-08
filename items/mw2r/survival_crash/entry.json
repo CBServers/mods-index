@@ -5,27 +5,35 @@
     "author": "alicealys",
     "version": "1.0",
     "description": "Crash from Modern Warfare Remastered as a Survival map. Requires the Survival mod; pick it in Game Setup's map selection.\n\nSource and bug reports: [url=https://github.com/alicealys/h2-survival-mod]github.com/alicealys/h2-survival-mod[/url]",
-    "images": ["main.jpg"],
-    "requires": ["survival"],
+    "images": [
+        "main.jpg"
+    ],
+    "requires": [
+        "survival"
+    ],
     "files": [
         {
             "path": "mods/survival/maps/so_survival_mp_crash.gsc",
             "size": 764,
+            "hash": "2443697BA682D402",
             "url": "cdn:mods/mw2r/survival_crash/maps/so_survival_mp_crash.gsc"
         },
         {
             "path": "mods/survival/zone/mp_crash.ff",
             "size": 486857472,
+            "hash": "77D97F70C4DBC327",
             "url": "cdn:mods/mw2r/survival_crash/zone/mp_crash.ff"
         },
         {
             "path": "mods/survival/zone/mp_crash.pak",
             "size": 3817844100,
+            "hash": "253CEFC2442754EB",
             "url": "cdn:mods/mw2r/survival_crash/zone/mp_crash.pak"
         },
         {
             "path": "mods/survival/zone/so_survival_mp_crash.ff",
             "size": 12524,
+            "hash": "2604B75603ECD655",
             "url": "cdn:mods/mw2r/survival_crash/zone/so_survival_mp_crash.ff"
         }
     ]

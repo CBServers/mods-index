@@ -5,27 +5,35 @@
     "author": "alicealys",
     "version": "1.0",
     "description": "Backlot from Modern Warfare Remastered as a Survival map. Requires the Survival mod; pick it in Game Setup's map selection.\n\nSource and bug reports: [url=https://github.com/alicealys/h2-survival-mod]github.com/alicealys/h2-survival-mod[/url]",
-    "images": ["main.jpg"],
-    "requires": ["survival"],
+    "images": [
+        "main.jpg"
+    ],
+    "requires": [
+        "survival"
+    ],
     "files": [
         {
             "path": "mods/survival/maps/so_survival_mp_backlot.gsc",
             "size": 756,
+            "hash": "7557A29CB53AA834",
             "url": "cdn:mods/mw2r/survival_backlot/maps/so_survival_mp_backlot.gsc"
         },
         {
             "path": "mods/survival/zone/mp_backlot.ff",
             "size": 494728908,
+            "hash": "4AF08E931FBF3766",
             "url": "cdn:mods/mw2r/survival_backlot/zone/mp_backlot.ff"
         },
         {
             "path": "mods/survival/zone/mp_backlot.pak",
             "size": 3433378928,
+            "hash": "6D2FF271D8750F92",
             "url": "cdn:mods/mw2r/survival_backlot/zone/mp_backlot.pak"
         },
         {
             "path": "mods/survival/zone/so_survival_mp_backlot.ff",
             "size": 14084,
+            "hash": "07AFD75278639EAB",
             "url": "cdn:mods/mw2r/survival_backlot/zone/so_survival_mp_backlot.ff"
         }
     ]
