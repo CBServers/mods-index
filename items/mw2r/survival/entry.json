@@ -1,0 +1,1207 @@
+{
+    "id": "survival",
+    "type": "mod",
+    "name": "Survival",
+    "author": "alicealys",
+    "version": "3.0.7",
+    "description": "Modern Warfare 3's Survival mode, ported to MW2CR. Load SURVIVAL from the MODS menu in game.\n\nPlays on Upper Favela and Estate from MW2CR. Five more maps from Modern Warfare Remastered are separate entries that need this mod:\n[list][*]Backlot\n[*]Broadcast\n[*]Chinatown\n[*]Crash\n[*]Vacant[/list]\nSource and bug reports: [url=https://github.com/alicealys/h2-survival-mod]github.com/alicealys/h2-survival-mod[/url]",
+    "images": ["main.jpg", "banner.jpg", "menu.jpg", "ingame.jpg"],
+    "requires": [],
+    "files": [
+        {
+            "path": "mods/survival/aitype/ally_so_delta.gsc",
+            "size": 960,
+            "url": "cdn:mods/mw2r/survival/aitype/ally_so_delta.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/ally_so_riotshield.gsc",
+            "size": 959,
+            "url": "cdn:mods/mw2r/survival/aitype/ally_so_riotshield.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/enemy_dog.gsc",
+            "size": 736,
+            "url": "cdn:mods/mw2r/survival/aitype/enemy_dog.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/enemy_juggernaut_explosive.gsc",
+            "size": 786,
+            "url": "cdn:mods/mw2r/survival/aitype/enemy_juggernaut_explosive.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/enemy_juggernaut_headshot.gsc",
+            "size": 786,
+            "url": "cdn:mods/mw2r/survival/aitype/enemy_juggernaut_headshot.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/enemy_juggernaut_riotshield.gsc",
+            "size": 831,
+            "url": "cdn:mods/mw2r/survival/aitype/enemy_juggernaut_riotshield.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/enemy_juggernaut_so_survival.gsc",
+            "size": 778,
+            "url": "cdn:mods/mw2r/survival/aitype/enemy_juggernaut_so_survival.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/enemy_so_chemical.gsc",
+            "size": 1086,
+            "url": "cdn:mods/mw2r/survival/aitype/enemy_so_chemical.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/enemy_so_claymore.gsc",
+            "size": 1139,
+            "url": "cdn:mods/mw2r/survival/aitype/enemy_so_claymore.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/enemy_so_easy.gsc",
+            "size": 2641,
+            "url": "cdn:mods/mw2r/survival/aitype/enemy_so_easy.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/enemy_so_elite.gsc",
+            "size": 1342,
+            "url": "cdn:mods/mw2r/survival/aitype/enemy_so_elite.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/enemy_so_hardened.gsc",
+            "size": 2234,
+            "url": "cdn:mods/mw2r/survival/aitype/enemy_so_hardened.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/enemy_so_martyrdom.gsc",
+            "size": 1056,
+            "url": "cdn:mods/mw2r/survival/aitype/enemy_so_martyrdom.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/enemy_so_regular.gsc",
+            "size": 1058,
+            "url": "cdn:mods/mw2r/survival/aitype/enemy_so_regular.gsc"
+        },
+        {
+            "path": "mods/survival/aitype/enemy_so_veteran.gsc",
+            "size": 1826,
+            "url": "cdn:mods/mw2r/survival/aitype/enemy_so_veteran.gsc"
+        },
+        {
+            "path": "mods/survival/animscripts/riotshield/riotshield.gsc",
+            "size": 36518,
+            "url": "cdn:mods/mw2r/survival/animscripts/riotshield/riotshield.gsc"
+        },
+        {
+            "path": "mods/survival/common_scripts/_sentry.gsc",
+            "size": 100,
+            "url": "cdn:mods/mw2r/survival/common_scripts/_sentry.gsc"
+        },
+        {
+            "path": "mods/survival/info.json",
+            "size": 127,
+            "url": "cdn:mods/mw2r/survival/info.json"
+        },
+        {
+            "path": "mods/survival/maps/so_survival_estate.gsc",
+            "size": 3144,
+            "url": "cdn:mods/mw2r/survival/maps/so_survival_estate.gsc"
+        },
+        {
+            "path": "mods/survival/maps/so_survival_favela_escape.gsc",
+            "size": 4415,
+            "url": "cdn:mods/mw2r/survival/maps/so_survival_favela_escape.gsc"
+        },
+        {
+            "path": "mods/survival/maps/so_survival_mp_kremlin.gsc",
+            "size": 612,
+            "url": "cdn:mods/mw2r/survival/maps/so_survival_mp_kremlin.gsc"
+        },
+        {
+            "path": "mods/survival/maps/so_survival_precache.gsc",
+            "size": 436,
+            "url": "cdn:mods/mw2r/survival/maps/so_survival_precache.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_air_support_strobe.gsc",
+            "size": 19242,
+            "url": "cdn:mods/mw2r/survival/maps/_air_support_strobe.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_chopperboss.gsc",
+            "size": 20897,
+            "url": "cdn:mods/mw2r/survival/maps/_chopperboss.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_laststand.gsc",
+            "size": 58163,
+            "url": "cdn:mods/mw2r/survival/maps/_laststand.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_missions.gsc",
+            "size": 9683,
+            "url": "cdn:mods/mw2r/survival/maps/_missions.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_playerdata.gsc",
+            "size": 2499,
+            "url": "cdn:mods/mw2r/survival/maps/_playerdata.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_rank.gsc",
+            "size": 24018,
+            "url": "cdn:mods/mw2r/survival/maps/_rank.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_remotemissile.gsc",
+            "size": 114,
+            "url": "cdn:mods/mw2r/survival/maps/_remotemissile.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_remotemissile_utility.gsc",
+            "size": 3199,
+            "url": "cdn:mods/mw2r/survival/maps/_remotemissile_utility.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_riotshield.gsc",
+            "size": 8853,
+            "url": "cdn:mods/mw2r/survival/maps/_riotshield.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_so_survival.gsc",
+            "size": 84259,
+            "url": "cdn:mods/mw2r/survival/maps/_so_survival.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_so_survival_ai.gsc",
+            "size": 115011,
+            "url": "cdn:mods/mw2r/survival/maps/_so_survival_ai.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_so_survival_anim_h2mod.gsc",
+            "size": 190,
+            "url": "cdn:mods/mw2r/survival/maps/_so_survival_anim_h2mod.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_so_survival_armory.gsc",
+            "size": 67227,
+            "url": "cdn:mods/mw2r/survival/maps/_so_survival_armory.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_so_survival_challenge.gsc",
+            "size": 17112,
+            "url": "cdn:mods/mw2r/survival/maps/_so_survival_challenge.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_so_survival_challenge_h2mod.gsc",
+            "size": 2753,
+            "url": "cdn:mods/mw2r/survival/maps/_so_survival_challenge_h2mod.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_so_survival_code.gsc",
+            "size": 36255,
+            "url": "cdn:mods/mw2r/survival/maps/_so_survival_code.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_so_survival_dialog.gsc",
+            "size": 15437,
+            "url": "cdn:mods/mw2r/survival/maps/_so_survival_dialog.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_so_survival_h2mod.gsc",
+            "size": 2594,
+            "url": "cdn:mods/mw2r/survival/maps/_so_survival_h2mod.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_so_survival_loot.gsc",
+            "size": 9872,
+            "url": "cdn:mods/mw2r/survival/maps/_so_survival_loot.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_so_survival_perks.gsc",
+            "size": 4902,
+            "url": "cdn:mods/mw2r/survival/maps/_so_survival_perks.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_specialops.gsc",
+            "size": 102344,
+            "url": "cdn:mods/mw2r/survival/maps/_specialops.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_specialops_battlechatter.gsc",
+            "size": 14318,
+            "url": "cdn:mods/mw2r/survival/maps/_specialops_battlechatter.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_specialops_code.gsc",
+            "size": 57508,
+            "url": "cdn:mods/mw2r/survival/maps/_specialops_code.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_sp_airdrop.gsc",
+            "size": 32194,
+            "url": "cdn:mods/mw2r/survival/maps/_sp_airdrop.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_sp_airstrike.gsc",
+            "size": 22615,
+            "url": "cdn:mods/mw2r/survival/maps/_sp_airstrike.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_sp_killstreaks.gsc",
+            "size": 33202,
+            "url": "cdn:mods/mw2r/survival/maps/_sp_killstreaks.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_squad_enemies.gsc",
+            "size": 32576,
+            "url": "cdn:mods/mw2r/survival/maps/_squad_enemies.gsc"
+        },
+        {
+            "path": "mods/survival/maps/_utility_joec.gsc",
+            "size": 1384,
+            "url": "cdn:mods/mw2r/survival/maps/_utility_joec.gsc"
+        },
+        {
+            "path": "mods/survival/scripts/hooks.gsc",
+            "size": 17760,
+            "url": "cdn:mods/mw2r/survival/scripts/hooks.gsc"
+        },
+        {
+            "path": "mods/survival/scripts/noder/__init__.lua",
+            "size": 10339,
+            "url": "cdn:mods/mw2r/survival/scripts/noder/__init__.lua"
+        },
+        {
+            "path": "mods/survival/scripts/playerdata.gsc",
+            "size": 0,
+            "url": "cdn:mods/mw2r/survival/scripts/playerdata.gsc"
+        },
+        {
+            "path": "mods/survival/scripts/spawn_builder/__init__.lua",
+            "size": 4856,
+            "url": "cdn:mods/mw2r/survival/scripts/spawn_builder/__init__.lua"
+        },
+        {
+            "path": "mods/survival/scripts/survival/main.lua",
+            "size": 495,
+            "url": "cdn:mods/mw2r/survival/scripts/survival/main.lua"
+        },
+        {
+            "path": "mods/survival/scripts/survival/menus.lua",
+            "size": 5667,
+            "url": "cdn:mods/mw2r/survival/scripts/survival/menus.lua"
+        },
+        {
+            "path": "mods/survival/scripts/survival/precache.lua",
+            "size": 913,
+            "url": "cdn:mods/mw2r/survival/scripts/survival/precache.lua"
+        },
+        {
+            "path": "mods/survival/scripts/survival/survival.lua",
+            "size": 2260,
+            "url": "cdn:mods/mw2r/survival/scripts/survival/survival.lua"
+        },
+        {
+            "path": "mods/survival/scripts/survival/utils.lua",
+            "size": 89,
+            "url": "cdn:mods/mw2r/survival/scripts/survival/utils.lua"
+        },
+        {
+            "path": "mods/survival/scripts/survival/__init__.lua",
+            "size": 121,
+            "url": "cdn:mods/mw2r/survival/scripts/survival/__init__.lua"
+        },
+        {
+            "path": "mods/survival/scripts/survival.gsc",
+            "size": 4640,
+            "url": "cdn:mods/mw2r/survival/scripts/survival.gsc"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_civ_kill_warning_01.flac",
+            "size": 85517,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_civ_kill_warning_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_civ_kill_warning_02.flac",
+            "size": 90034,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_civ_kill_warning_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_civ_kill_warning_03.flac",
+            "size": 86621,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_civ_kill_warning_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_fail_bleedout_01.flac",
+            "size": 118249,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_fail_bleedout_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_fail_bleedout_02.flac",
+            "size": 101651,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_fail_bleedout_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_fail_generic_01.flac",
+            "size": 89711,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_fail_generic_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_fail_generic_02.flac",
+            "size": 85921,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_fail_generic_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_fail_generic_03.flac",
+            "size": 74508,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_fail_generic_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_fail_generic_04.flac",
+            "size": 123431,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_fail_generic_04.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_fail_time_01.flac",
+            "size": 98093,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_fail_time_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_fail_time_02.flac",
+            "size": 105788,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_fail_time_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_plyr_prep_01.flac",
+            "size": 42886,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_plyr_prep_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_plyr_prep_02.flac",
+            "size": 41381,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_plyr_prep_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_1more_01.flac",
+            "size": 41015,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_1more_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_1more_02.flac",
+            "size": 44866,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_1more_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_1more_03.flac",
+            "size": 51149,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_1more_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_2more_01.flac",
+            "size": 39442,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_2more_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_2more_02.flac",
+            "size": 40149,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_2more_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_2more_03.flac",
+            "size": 44764,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_2more_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_3more_01.flac",
+            "size": 40639,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_3more_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_3more_02.flac",
+            "size": 42501,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_3more_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_3more_03.flac",
+            "size": 47974,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_3more_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_3quarter_01.flac",
+            "size": 88691,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_3quarter_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_3quarter_02.flac",
+            "size": 87417,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_3quarter_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_3quarter_03.flac",
+            "size": 90728,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_3quarter_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_4more_01.flac",
+            "size": 41380,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_4more_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_4more_02.flac",
+            "size": 41956,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_4more_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_4more_03.flac",
+            "size": 48451,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_4more_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_5more_01.flac",
+            "size": 42122,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_5more_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_5more_02.flac",
+            "size": 45616,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_5more_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_5more_03.flac",
+            "size": 44998,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_5more_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_half_01.flac",
+            "size": 46881,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_half_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_half_02.flac",
+            "size": 55017,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_half_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_half_03.flac",
+            "size": 49512,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_half_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_quarter_01.flac",
+            "size": 65590,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_quarter_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_quarter_02.flac",
+            "size": 76610,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_quarter_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_progress_quarter_03.flac",
+            "size": 77556,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_progress_quarter_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_success_best_01.flac",
+            "size": 99864,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_success_best_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_success_best_02.flac",
+            "size": 90995,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_success_best_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_success_best_03.flac",
+            "size": 93282,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_success_best_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_success_best_04.flac",
+            "size": 98177,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_success_best_04.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_success_generic_01.flac",
+            "size": 70212,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_success_generic_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_success_generic_02.flac",
+            "size": 60848,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_success_generic_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_success_generic_03.flac",
+            "size": 61863,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_success_generic_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_success_jerk_01.flac",
+            "size": 84045,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_success_jerk_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_success_jerk_02.flac",
+            "size": 73835,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_success_jerk_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_success_jerk_03.flac",
+            "size": 82651,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_success_jerk_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_time_generic_01.flac",
+            "size": 64782,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_time_generic_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_time_generic_02.flac",
+            "size": 54477,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_time_generic_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_time_generic_03.flac",
+            "size": 63142,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_time_generic_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_time_hurry_01.flac",
+            "size": 80132,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_time_hurry_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_time_hurry_02.flac",
+            "size": 66133,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_time_hurry_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_time_hurry_03.flac",
+            "size": 53321,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_time_hurry_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_time_status_good_01.flac",
+            "size": 80668,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_time_status_good_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_time_status_good_02.flac",
+            "size": 95088,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_time_status_good_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_time_status_good_03.flac",
+            "size": 95467,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_time_status_good_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_time_status_late_01.flac",
+            "size": 87800,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_time_status_late_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_time_status_late_02.flac",
+            "size": 87535,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_time_status_late_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_1_time_status_late_03.flac",
+            "size": 103422,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_1_time_status_late_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_airsupport_ally_delta_01.flac",
+            "size": 154407,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_airsupport_ally_delta_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_airsupport_ally_delta_02.flac",
+            "size": 101339,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_airsupport_ally_delta_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_airsupport_ally_riotshield_01.flac",
+            "size": 141912,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_airsupport_ally_riotshield_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_airsupport_ally_riotshield_02.flac",
+            "size": 100297,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_airsupport_ally_riotshield_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_armory_open_airstrike_01.flac",
+            "size": 149545,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_armory_open_airstrike_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_armory_open_weapon_01.flac",
+            "size": 137705,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_armory_open_weapon_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_armory_open_weapon_01.mp3",
+            "size": 72888,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_armory_open_weapon_01.mp3"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_armory_open_weapon_02.flac",
+            "size": 166386,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_armory_open_weapon_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_armory_stocked_01.flac",
+            "size": 68176,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_armory_stocked_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_armory_stocked_equipment_01.flac",
+            "size": 80432,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_armory_stocked_equipment_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_boss_intel_chopper_01.flac",
+            "size": 70207,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_boss_intel_chopper_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_boss_intel_chopper_02.flac",
+            "size": 143959,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_boss_intel_chopper_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_boss_intel_chopper_many_01.flac",
+            "size": 126943,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_boss_intel_chopper_many_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_boss_intel_chopper_many_01.mp3",
+            "size": 65579,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_boss_intel_chopper_many_01.mp3"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_boss_intel_chopper_many_02.flac",
+            "size": 145060,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_boss_intel_chopper_many_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_chemical_01.flac",
+            "size": 118074,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_chemical_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_chemical_02.flac",
+            "size": 154480,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_chemical_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_claymore_01.flac",
+            "size": 137392,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_claymore_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_claymore_02.flac",
+            "size": 157927,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_claymore_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_dogs_01.flac",
+            "size": 97415,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_dogs_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_dogs_02.flac",
+            "size": 109976,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_dogs_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_dogs_splode_01.flac",
+            "size": 170024,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_dogs_splode_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_dogs_splode_02.flac",
+            "size": 188311,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_dogs_splode_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_generic_01.flac",
+            "size": 60930,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_generic_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_generic_02.flac",
+            "size": 79833,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_generic_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_generic_03.flac",
+            "size": 94894,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_generic_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_generic_04.flac",
+            "size": 94900,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_generic_04.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_generic_05.flac",
+            "size": 124218,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_generic_05.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_generic_06.flac",
+            "size": 121104,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_generic_06.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_generic_07.flac",
+            "size": 78936,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_generic_07.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_generic_08.flac",
+            "size": 69742,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_generic_08.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_generic_09.flac",
+            "size": 170210,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_generic_09.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_generic_10.flac",
+            "size": 121608,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_generic_10.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_generic_11.flac",
+            "size": 69295,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_generic_11.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_generic_12.flac",
+            "size": 160643,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_generic_12.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_martyrdom_01.flac",
+            "size": 90021,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_martyrdom_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_martyrdom_02.flac",
+            "size": 145651,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_martyrdom_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_transport_01.flac",
+            "size": 65507,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_transport_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_transport_02.flac",
+            "size": 190635,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_transport_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_intel_transport_many_01.flac",
+            "size": 144928,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_intel_transport_many_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_update_claymore_01.flac",
+            "size": 151674,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_update_claymore_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_enemy_update_claymore_02.flac",
+            "size": 109249,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_enemy_update_claymore_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_mission_intro_01.flac",
+            "size": 194472,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_mission_intro_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_mission_intro_02.flac",
+            "size": 169866,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_mission_intro_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_mission_intro_03.flac",
+            "size": 177002,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_mission_intro_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_mission_intro_04.flac",
+            "size": 212872,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_mission_intro_04.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_mission_intro_05.flac",
+            "size": 227231,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_mission_intro_05.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_mission_intro_06.flac",
+            "size": 211759,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_mission_intro_06.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_mission_intro_07.flac",
+            "size": 104773,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_mission_intro_07.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_mission_intro_08.flac",
+            "size": 220545,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_mission_intro_08.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_mission_intro_09.flac",
+            "size": 197306,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_mission_intro_09.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_mission_intro_10.flac",
+            "size": 169699,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_mission_intro_10.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_mission_intro_11.flac",
+            "size": 203896,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_mission_intro_11.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_mission_intro_12.flac",
+            "size": 209399,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_mission_intro_12.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_sentry_down_01.flac",
+            "size": 66786,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_sentry_down_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_sentry_underattack_01.flac",
+            "size": 77912,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_sentry_underattack_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_uav_busy_01.flac",
+            "size": 114795,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_uav_busy_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_uav_busy_02.flac",
+            "size": 96553,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_uav_busy_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_uav_busy_03.flac",
+            "size": 95264,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_uav_busy_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_uav_busy_04.flac",
+            "size": 116267,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_uav_busy_04.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_uav_busy_05.flac",
+            "size": 82016,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_uav_busy_05.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_uav_busy_06.flac",
+            "size": 97691,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_uav_busy_06.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_wave_over_flavor_01.flac",
+            "size": 106924,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_wave_over_flavor_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_wave_over_flavor_02.flac",
+            "size": 105439,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_wave_over_flavor_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_wave_over_flavor_03.flac",
+            "size": 94445,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_wave_over_flavor_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_wave_over_flavor_04.flac",
+            "size": 90816,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_wave_over_flavor_04.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_wave_over_flavor_05.flac",
+            "size": 94951,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_wave_over_flavor_05.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_wave_over_flavor_06.flac",
+            "size": 78353,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_wave_over_flavor_06.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_wave_over_flavor_07.flac",
+            "size": 88614,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_wave_over_flavor_07.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_wave_over_flavor_08.flac",
+            "size": 90112,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_wave_over_flavor_08.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/so_hq_wave_over_flavor_09.flac",
+            "size": 117534,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/so_hq_wave_over_flavor_09.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/US/MP/US_1mc_achieve_airstrike_01.flac",
+            "size": 78163,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/US/MP/US_1mc_achieve_airstrike_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/US/MP/US_1mc_achieve_airstrike_02.flac",
+            "size": 135829,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/US/MP/US_1mc_achieve_airstrike_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/US/MP/US_1mc_achieve_predator_01.flac",
+            "size": 72930,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/US/MP/US_1mc_achieve_predator_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/US/MP/US_1mc_achieve_predator_02.flac",
+            "size": 143922,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/US/MP/US_1mc_achieve_predator_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/US/MP/US_1mc_deploy_sentrygun_01.flac",
+            "size": 64956,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/US/MP/US_1mc_deploy_sentrygun_01.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/US/MP/US_1mc_deploy_sentrygun_02.flac",
+            "size": 96818,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/US/MP/US_1mc_deploy_sentrygun_02.flac"
+        },
+        {
+            "path": "mods/survival/sound/battlechatter/US/MP/US_1mc_deploy_sentrygun_03.flac",
+            "size": 76458,
+            "url": "cdn:mods/mw2r/survival/sound/battlechatter/US/MP/US_1mc_deploy_sentrygun_03.flac"
+        },
+        {
+            "path": "mods/survival/sound/music/bt_london_warehouse.flac",
+            "size": 5343594,
+            "url": "cdn:mods/mw2r/survival/sound/music/bt_london_warehouse.flac"
+        },
+        {
+            "path": "mods/survival/sound/music/bt_pragueescape_defend.flac",
+            "size": 5733775,
+            "url": "cdn:mods/mw2r/survival/sound/music/bt_pragueescape_defend.flac"
+        },
+        {
+            "path": "mods/survival/sound/music/bt_so_menumusic.flac",
+            "size": 10502043,
+            "url": "cdn:mods/mw2r/survival/sound/music/bt_so_menumusic.flac"
+        },
+        {
+            "path": "mods/survival/sound/music/bt_so_survival.flac",
+            "size": 8142206,
+            "url": "cdn:mods/mw2r/survival/sound/music/bt_so_survival.flac"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/common/xp.lua",
+            "size": 6275,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/common/xp.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/hud/laststand.lua",
+            "size": 4403,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/hud/laststand.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/hud/main.lua",
+            "size": 8196,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/hud/main.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/hud/perks.lua",
+            "size": 4633,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/hud/perks.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/hud/score.lua",
+            "size": 17831,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/hud/score.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/hud/wavesummary.lua",
+            "size": 9274,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/hud/wavesummary.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/main.lua",
+            "size": 7043,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/main.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/menus/levelselect.lua",
+            "size": 6967,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/menus/levelselect.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/menus/lobby.lua",
+            "size": 10262,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/menus/lobby.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/menus/personalization.lua",
+            "size": 8111,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/menus/personalization.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/menus/stats.lua",
+            "size": 3132,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/menus/stats.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/popups/eog_summary.lua",
+            "size": 5751,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/popups/eog_summary.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/popups/specops_ui_airsupport.lua",
+            "size": 3895,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/popups/specops_ui_airsupport.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/popups/specops_ui_equipmentstore.lua",
+            "size": 3510,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/popups/specops_ui_equipmentstore.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/popups/specops_ui_weaponstore.lua",
+            "size": 14762,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/popups/specops_ui_weaponstore.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/popups/storemenu.lua",
+            "size": 12485,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/popups/storemenu.lua"
+        },
+        {
+            "path": "mods/survival/ui_scripts/survival_ui/__init__.lua",
+            "size": 17,
+            "url": "cdn:mods/mw2r/survival/ui_scripts/survival_ui/__init__.lua"
+        },
+        {
+            "path": "mods/survival/vehicle_scripts/_blackhawk.gsc",
+            "size": 10164,
+            "url": "cdn:mods/mw2r/survival/vehicle_scripts/_blackhawk.gsc"
+        },
+        {
+            "path": "mods/survival/vehicle_scripts/_blackhawk_aud.gsc",
+            "size": 9520,
+            "url": "cdn:mods/mw2r/survival/vehicle_scripts/_blackhawk_aud.gsc"
+        },
+        {
+            "path": "mods/survival/vehicle_scripts/_littlebird.gsc",
+            "size": 14719,
+            "url": "cdn:mods/mw2r/survival/vehicle_scripts/_littlebird.gsc"
+        },
+        {
+            "path": "mods/survival/vehicle_scripts/_littlebird_aud.gsc",
+            "size": 15640,
+            "url": "cdn:mods/mw2r/survival/vehicle_scripts/_littlebird_aud.gsc"
+        },
+        {
+            "path": "mods/survival/vehicle_scripts/_littlebird_landing.gsc",
+            "size": 4788,
+            "url": "cdn:mods/mw2r/survival/vehicle_scripts/_littlebird_landing.gsc"
+        },
+        {
+            "path": "mods/survival/vehicle_scripts/_littlebird_player.gsc",
+            "size": 174,
+            "url": "cdn:mods/mw2r/survival/vehicle_scripts/_littlebird_player.gsc"
+        },
+        {
+            "path": "mods/survival/vehicle_scripts/_mi17.gsc",
+            "size": 8253,
+            "url": "cdn:mods/mw2r/survival/vehicle_scripts/_mi17.gsc"
+        },
+        {
+            "path": "mods/survival/vehicle_scripts/_mi17_aud.gsc",
+            "size": 9504,
+            "url": "cdn:mods/mw2r/survival/vehicle_scripts/_mi17_aud.gsc"
+        },
+        {
+            "path": "mods/survival/vehicle_scripts/_mi17_noai.gsc",
+            "size": 4551,
+            "url": "cdn:mods/mw2r/survival/vehicle_scripts/_mi17_noai.gsc"
+        },
+        {
+            "path": "mods/survival/vehicle_scripts/_ucav.gsc",
+            "size": 2745,
+            "url": "cdn:mods/mw2r/survival/vehicle_scripts/_ucav.gsc"
+        },
+        {
+            "path": "mods/survival/video/default.bik",
+            "size": 772,
+            "url": "cdn:mods/mw2r/survival/video/default.bik"
+        },
+        {
+            "path": "mods/survival/video/survival_menu_bg.bik",
+            "size": 74338484,
+            "url": "cdn:mods/mw2r/survival/video/survival_menu_bg.bik"
+        },
+        {
+            "path": "mods/survival/zone/common_specialops.ff",
+            "size": 136,
+            "url": "cdn:mods/mw2r/survival/zone/common_specialops.ff"
+        },
+        {
+            "path": "mods/survival/zone/common_survival.ff",
+            "size": 491239140,
+            "url": "cdn:mods/mw2r/survival/zone/common_survival.ff"
+        },
+        {
+            "path": "mods/survival/zone/h1_assets.ff",
+            "size": 315374216,
+            "url": "cdn:mods/mw2r/survival/zone/h1_assets.ff"
+        },
+        {
+            "path": "mods/survival/zone/h1_assets.pak",
+            "size": 843341884,
+            "url": "cdn:mods/mw2r/survival/zone/h1_assets.pak"
+        },
+        {
+            "path": "mods/survival/zone/mod.ff",
+            "size": 24013512,
+            "url": "cdn:mods/mw2r/survival/zone/mod.ff"
+        },
+        {
+            "path": "mods/survival/zone/so_survival_estate.ff",
+            "size": 28380,
+            "url": "cdn:mods/mw2r/survival/zone/so_survival_estate.ff"
+        },
+        {
+            "path": "mods/survival/zone/so_survival_favela_escape.ff",
+            "size": 21640,
+            "url": "cdn:mods/mw2r/survival/zone/so_survival_favela_escape.ff"
+        },
+        {
+            "path": "mods/survival/zones.csv",
+            "size": 14,
+            "url": "cdn:mods/mw2r/survival/zones.csv"
+        }
+    ]
+}

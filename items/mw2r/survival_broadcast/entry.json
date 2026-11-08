@@ -1,0 +1,32 @@
+{
+    "id": "survival_broadcast",
+    "type": "map",
+    "name": "Survival: Broadcast",
+    "author": "alicealys",
+    "version": "1.0",
+    "description": "Broadcast from Modern Warfare Remastered as a Survival map. Requires the Survival mod; pick it in Game Setup's map selection.\n\nSource and bug reports: [url=https://github.com/alicealys/h2-survival-mod]github.com/alicealys/h2-survival-mod[/url]",
+    "images": ["main.jpg"],
+    "requires": ["survival"],
+    "files": [
+        {
+            "path": "mods/survival/maps/so_survival_mp_broadcast.gsc",
+            "size": 771,
+            "url": "cdn:mods/mw2r/survival_broadcast/maps/so_survival_mp_broadcast.gsc"
+        },
+        {
+            "path": "mods/survival/zone/mp_broadcast.ff",
+            "size": 369867160,
+            "url": "cdn:mods/mw2r/survival_broadcast/zone/mp_broadcast.ff"
+        },
+        {
+            "path": "mods/survival/zone/mp_broadcast.pak",
+            "size": 3556614928,
+            "url": "cdn:mods/mw2r/survival_broadcast/zone/mp_broadcast.pak"
+        },
+        {
+            "path": "mods/survival/zone/so_survival_mp_broadcast.ff",
+            "size": 13808,
+            "url": "cdn:mods/mw2r/survival_broadcast/zone/so_survival_mp_broadcast.ff"
+        }
+    ]
+}

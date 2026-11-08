@@ -1,0 +1,32 @@
+{
+    "id": "survival_vacant",
+    "type": "map",
+    "name": "Survival: Vacant",
+    "author": "alicealys",
+    "version": "1.0",
+    "description": "Vacant from Modern Warfare Remastered as a Survival map. Requires the Survival mod; pick it in Game Setup's map selection.\n\nSource and bug reports: [url=https://github.com/alicealys/h2-survival-mod]github.com/alicealys/h2-survival-mod[/url]",
+    "images": ["main.jpg"],
+    "requires": ["survival"],
+    "files": [
+        {
+            "path": "mods/survival/maps/so_survival_mp_vacant.gsc",
+            "size": 927,
+            "url": "cdn:mods/mw2r/survival_vacant/maps/so_survival_mp_vacant.gsc"
+        },
+        {
+            "path": "mods/survival/zone/mp_vacant.ff",
+            "size": 363790956,
+            "url": "cdn:mods/mw2r/survival_vacant/zone/mp_vacant.ff"
+        },
+        {
+            "path": "mods/survival/zone/mp_vacant.pak",
+            "size": 3476726444,
+            "url": "cdn:mods/mw2r/survival_vacant/zone/mp_vacant.pak"
+        },
+        {
+            "path": "mods/survival/zone/so_survival_mp_vacant.ff",
+            "size": 13948,
+            "url": "cdn:mods/mw2r/survival_vacant/zone/so_survival_mp_vacant.ff"
+        }
+    ]
+}
