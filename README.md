@@ -26,9 +26,12 @@ keep them in sync.
 
 - **Validate** (every pull request): entry schema, path and link rules, collisions with the game's
   and clients' manifests from CBServers/updater and with other entries, and a full download of every new or
-  changed file to check its size. Downloads are streamed and never stored. A pull request may not add or alter
-  a `hash`.
+  changed file to check its size. Downloads are streamed and never stored. Zip archives are listed through
+  range requests (only the zip's directory is read) so every member's install path is checked and shown in the
+  summary, then new or changed zips are downloaded to a temporary file and every member is extracted and hashed.
+  A pull request may not add or alter a `hash`, or an archive's `contents`.
 - **Publish** (every push to `main`): downloads each file without a hash, writes the XXH3 hash into its entry
+  (for an archive: its hash plus `contents`, the member, install path, size and hash of every file it installs)
   and commits it as `fill hashes [skip ci]`, then builds `dist/<game>.json` for every game and force-pushes
   them as a single commit to the `dist` branch. Entries that fail a check are left out of the build. Finally it
   pings the workshop worker so the launcher sees the change right away.
@@ -67,7 +70,10 @@ Hashes are XXH3-64 in the launcher's `utils::hash` format: the little-endian byt
 }
 ```
 
-`root` is always filled in, `preview` is null without images, and each file has either `url` or `parts`.
+`root` is always filled in, `preview` is null without images, and each file has either `url` or `parts`, or,
+when it comes from a zip, `archive` (an index into the item's `archives: [{ url | parts, size, hash }]`) and
+`member` (its name in the zip). `size` is the installed size. Items without archives have no `archives` key.
+The workshop worker only serves items with archives to launchers that ask with `archives=1`.
 `addedAt` and `updatedAt` come from git history (unix seconds), ignoring the hash commits.
 
 ## Running locally
