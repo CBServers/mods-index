@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_overflow.zip",
             "size": 648900991,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "9D1B60AA1A8801B5",
+            "contents": [
+                {
+                    "member": "zm_overflow/en_zm_overflow.ff",
+                    "path": "usermaps/zm_overflow/en_zm_overflow.ff",
+                    "size": 512,
+                    "hash": "EB1AB83D268AC53F"
+                },
+                {
+                    "member": "zm_overflow/mpz_overflow.ipak",
+                    "path": "usermaps/zm_overflow/mpz_overflow.ipak",
+                    "size": 165806080,
+                    "hash": "0DDCDF268CF1085E"
+                },
+                {
+                    "member": "zm_overflow/version.json",
+                    "path": "usermaps/zm_overflow/version.json",
+                    "size": 176,
+                    "hash": "B513FC1C7A392B61"
+                },
+                {
+                    "member": "zm_overflow/zm_overflow.ff",
+                    "path": "usermaps/zm_overflow/zm_overflow.ff",
+                    "size": 95241728,
+                    "hash": "F9AB184F8BF88E14"
+                },
+                {
+                    "member": "zm_overflow/zm_overflow.iwd",
+                    "path": "usermaps/zm_overflow/zm_overflow.iwd",
+                    "size": 196149,
+                    "hash": "66377B80C1C99B8C"
+                },
+                {
+                    "member": "zm_overflow/zz_unique_sounds_mp_overflow.all.sabl",
+                    "path": "usermaps/zm_overflow/zz_unique_sounds_mp_overflow.all.sabl",
+                    "size": 238775136,
+                    "hash": "291173863825B830"
+                },
+                {
+                    "member": "zm_overflow/zz_unique_sounds_mp_overflow.all.sabs",
+                    "path": "usermaps/zm_overflow/zz_unique_sounds_mp_overflow.all.sabs",
+                    "size": 200798880,
+                    "hash": "56D1571B4DEF33B5"
+                }
+            ]
         }
     ]
 }

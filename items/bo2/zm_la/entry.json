@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_la.zip",
             "size": 655258025,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "E161F52A9DCDC432",
+            "contents": [
+                {
+                    "member": "zm_la/en_zm_la.ff",
+                    "path": "usermaps/zm_la/en_zm_la.ff",
+                    "size": 512,
+                    "hash": "8F268BAE0014AA8B"
+                },
+                {
+                    "member": "zm_la/mpz_la.ipak",
+                    "path": "usermaps/zm_la/mpz_la.ipak",
+                    "size": 169312256,
+                    "hash": "A9858B05D827CE66"
+                },
+                {
+                    "member": "zm_la/version.json",
+                    "path": "usermaps/zm_la/version.json",
+                    "size": 170,
+                    "hash": "F41D068A13316372"
+                },
+                {
+                    "member": "zm_la/zm_la.ff",
+                    "path": "usermaps/zm_la/zm_la.ff",
+                    "size": 89739392,
+                    "hash": "C3DEE8084D5EDD86"
+                },
+                {
+                    "member": "zm_la/zm_la.iwd",
+                    "path": "usermaps/zm_la/zm_la.iwd",
+                    "size": 196396,
+                    "hash": "06225B45428D389A"
+                },
+                {
+                    "member": "zm_la/zz_unique_sounds_mp_la.all.sabl",
+                    "path": "usermaps/zm_la/zz_unique_sounds_mp_la.all.sabl",
+                    "size": 242745568,
+                    "hash": "4EE848313A19B7FB"
+                },
+                {
+                    "member": "zm_la/zz_unique_sounds_mp_la.all.sabs",
+                    "path": "usermaps/zm_la/zz_unique_sounds_mp_la.all.sabs",
+                    "size": 205914624,
+                    "hash": "313DFC7CEE1C7E2E"
+                }
+            ]
         }
     ]
 }

@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_dig.zip",
             "size": 677301173,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "19FD74D67FE7FD21",
+            "contents": [
+                {
+                    "member": "zm_dig/en_zm_dig.ff",
+                    "path": "usermaps/zm_dig/en_zm_dig.ff",
+                    "size": 512,
+                    "hash": "3900E99409136359"
+                },
+                {
+                    "member": "zm_dig/mpz_dig.ipak",
+                    "path": "usermaps/zm_dig/mpz_dig.ipak",
+                    "size": 214138880,
+                    "hash": "941C37101B099F7D"
+                },
+                {
+                    "member": "zm_dig/version.json",
+                    "path": "usermaps/zm_dig/version.json",
+                    "size": 171,
+                    "hash": "C171AE47AD26305E"
+                },
+                {
+                    "member": "zm_dig/zm_dig.ff",
+                    "path": "usermaps/zm_dig/zm_dig.ff",
+                    "size": 83678784,
+                    "hash": "4F9A6762D8AB9F53"
+                },
+                {
+                    "member": "zm_dig/zm_dig.iwd",
+                    "path": "usermaps/zm_dig/zm_dig.iwd",
+                    "size": 193024,
+                    "hash": "7F7C5A2521695BBB"
+                },
+                {
+                    "member": "zm_dig/zz_unique_sounds_mp_dig.all.sabl",
+                    "path": "usermaps/zm_dig/zz_unique_sounds_mp_dig.all.sabl",
+                    "size": 244626192,
+                    "hash": "1910FB9312F82F05"
+                },
+                {
+                    "member": "zm_dig/zz_unique_sounds_mp_dig.all.sabs",
+                    "path": "usermaps/zm_dig/zz_unique_sounds_mp_dig.all.sabs",
+                    "size": 192173168,
+                    "hash": "59A6EB0A82263F65"
+                }
+            ]
         }
     ]
 }

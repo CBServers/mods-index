@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_hijacked.zip",
             "size": 620669400,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "98A294D765C3BED8",
+            "contents": [
+                {
+                    "member": "zm_hijacked/en_zm_hijacked.ff",
+                    "path": "usermaps/zm_hijacked/en_zm_hijacked.ff",
+                    "size": 512,
+                    "hash": "5D5CFB72AA6F59AC"
+                },
+                {
+                    "member": "zm_hijacked/mpz_hijacked.ipak",
+                    "path": "usermaps/zm_hijacked/mpz_hijacked.ipak",
+                    "size": 146931712,
+                    "hash": "429D0500AF69E9FD"
+                },
+                {
+                    "member": "zm_hijacked/version.json",
+                    "path": "usermaps/zm_hijacked/version.json",
+                    "size": 176,
+                    "hash": "4CCC790B63CA75F5"
+                },
+                {
+                    "member": "zm_hijacked/zm_hijacked.ff",
+                    "path": "usermaps/zm_hijacked/zm_hijacked.ff",
+                    "size": 84040576,
+                    "hash": "8557A8414AE5E7CF"
+                },
+                {
+                    "member": "zm_hijacked/zm_hijacked.iwd",
+                    "path": "usermaps/zm_hijacked/zm_hijacked.iwd",
+                    "size": 179227,
+                    "hash": "8FC55016751B1204"
+                },
+                {
+                    "member": "zm_hijacked/zz_unique_sounds_mp_hijacked.all.sabl",
+                    "path": "usermaps/zm_hijacked/zz_unique_sounds_mp_hijacked.all.sabl",
+                    "size": 237134512,
+                    "hash": "C6C28AA5E170C291"
+                },
+                {
+                    "member": "zm_hijacked/zz_unique_sounds_mp_hijacked.all.sabs",
+                    "path": "usermaps/zm_hijacked/zz_unique_sounds_mp_hijacked.all.sabs",
+                    "size": 202636032,
+                    "hash": "9419E61332626131"
+                }
+            ]
         }
     ]
 }

@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_castaway.zip",
             "size": 679963807,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "C1D067C61F0AC92B",
+            "contents": [
+                {
+                    "member": "zm_castaway/en_zm_castaway.ff",
+                    "path": "usermaps/zm_castaway/en_zm_castaway.ff",
+                    "size": 512,
+                    "hash": "43012EDC39822694"
+                },
+                {
+                    "member": "zm_castaway/mpz_castaway.ipak",
+                    "path": "usermaps/zm_castaway/mpz_castaway.ipak",
+                    "size": 217513984,
+                    "hash": "A5F654037941CEB7"
+                },
+                {
+                    "member": "zm_castaway/version.json",
+                    "path": "usermaps/zm_castaway/version.json",
+                    "size": 176,
+                    "hash": "184A2B9FCD7F6A34"
+                },
+                {
+                    "member": "zm_castaway/zm_castaway.ff",
+                    "path": "usermaps/zm_castaway/zm_castaway.ff",
+                    "size": 81668480,
+                    "hash": "A026A7099EA15205"
+                },
+                {
+                    "member": "zm_castaway/zm_castaway.iwd",
+                    "path": "usermaps/zm_castaway/zm_castaway.iwd",
+                    "size": 186288,
+                    "hash": "0DE9120000DEBD80"
+                },
+                {
+                    "member": "zm_castaway/zz_unique_sounds_mp_castaway.all.sabl",
+                    "path": "usermaps/zm_castaway/zz_unique_sounds_mp_castaway.all.sabl",
+                    "size": 241590208,
+                    "hash": "CEDEFC982E2513EB"
+                },
+                {
+                    "member": "zm_castaway/zz_unique_sounds_mp_castaway.all.sabs",
+                    "path": "usermaps/zm_castaway/zz_unique_sounds_mp_castaway.all.sabs",
+                    "size": 196648192,
+                    "hash": "A55AD9C369A961E0"
+                }
+            ]
         }
     ]
 }

@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_vertigo.zip",
             "size": 687627132,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "077CE20255A5C2CD",
+            "contents": [
+                {
+                    "member": "zm_vertigo/en_zm_vertigo.ff",
+                    "path": "usermaps/zm_vertigo/en_zm_vertigo.ff",
+                    "size": 512,
+                    "hash": "D7A3B7C20C94FC67"
+                },
+                {
+                    "member": "zm_vertigo/mpz_vertigo.ipak",
+                    "path": "usermaps/zm_vertigo/mpz_vertigo.ipak",
+                    "size": 216432640,
+                    "hash": "D8837FEF6EB08AA8"
+                },
+                {
+                    "member": "zm_vertigo/version.json",
+                    "path": "usermaps/zm_vertigo/version.json",
+                    "size": 175,
+                    "hash": "AAD8B4D8ABAED128"
+                },
+                {
+                    "member": "zm_vertigo/zm_vertigo.ff",
+                    "path": "usermaps/zm_vertigo/zm_vertigo.ff",
+                    "size": 91527296,
+                    "hash": "D407E2D160F4503E"
+                },
+                {
+                    "member": "zm_vertigo/zm_vertigo.iwd",
+                    "path": "usermaps/zm_vertigo/zm_vertigo.iwd",
+                    "size": 191575,
+                    "hash": "145D79A7F38D7260"
+                },
+                {
+                    "member": "zm_vertigo/zz_unique_sounds_mp_vertigo.all.sabl",
+                    "path": "usermaps/zm_vertigo/zz_unique_sounds_mp_vertigo.all.sabl",
+                    "size": 240339648,
+                    "hash": "0E02FEF8887DC28F"
+                },
+                {
+                    "member": "zm_vertigo/zz_unique_sounds_mp_vertigo.all.sabs",
+                    "path": "usermaps/zm_vertigo/zz_unique_sounds_mp_vertigo.all.sabs",
+                    "size": 198174928,
+                    "hash": "C6DD044764A44E05"
+                }
+            ]
         }
     ]
 }

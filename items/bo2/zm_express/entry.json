@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_express.zip",
             "size": 663503087,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "900DFE3CE6686C5B",
+            "contents": [
+                {
+                    "member": "zm_express/en_zm_express.ff",
+                    "path": "usermaps/zm_express/en_zm_express.ff",
+                    "size": 512,
+                    "hash": "9DA452D19F345EA7"
+                },
+                {
+                    "member": "zm_express/mpz_express.ipak",
+                    "path": "usermaps/zm_express/mpz_express.ipak",
+                    "size": 156598272,
+                    "hash": "526C1DB90B0FFD1F"
+                },
+                {
+                    "member": "zm_express/version.json",
+                    "path": "usermaps/zm_express/version.json",
+                    "size": 175,
+                    "hash": "ADE57B9C136F3C51"
+                },
+                {
+                    "member": "zm_express/zm_express.ff",
+                    "path": "usermaps/zm_express/zm_express.ff",
+                    "size": 87776960,
+                    "hash": "8D9FAD761136DCF3"
+                },
+                {
+                    "member": "zm_express/zm_express.iwd",
+                    "path": "usermaps/zm_express/zm_express.iwd",
+                    "size": 186576,
+                    "hash": "812B1E399B719DB1"
+                },
+                {
+                    "member": "zm_express/zz_unique_sounds_mp_express.all.sabl",
+                    "path": "usermaps/zm_express/zz_unique_sounds_mp_express.all.sabl",
+                    "size": 242574960,
+                    "hash": "D68AB790AED3BDFF"
+                },
+                {
+                    "member": "zm_express/zz_unique_sounds_mp_express.all.sabs",
+                    "path": "usermaps/zm_express/zz_unique_sounds_mp_express.all.sabs",
+                    "size": 228098288,
+                    "hash": "44E8A637E39E23D7"
+                }
+            ]
         }
     ]
 }

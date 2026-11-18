@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_raid.zip",
             "size": 625052664,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "4847FFB930866030",
+            "contents": [
+                {
+                    "member": "zm_raid/en_zm_raid.ff",
+                    "path": "usermaps/zm_raid/en_zm_raid.ff",
+                    "size": 512,
+                    "hash": "E6C92505568F75E4"
+                },
+                {
+                    "member": "zm_raid/mpz_raid.ipak",
+                    "path": "usermaps/zm_raid/mpz_raid.ipak",
+                    "size": 146243584,
+                    "hash": "8EEDAC5C93B6A778"
+                },
+                {
+                    "member": "zm_raid/version.json",
+                    "path": "usermaps/zm_raid/version.json",
+                    "size": 172,
+                    "hash": "AACF4ABC24B8B8E4"
+                },
+                {
+                    "member": "zm_raid/zm_raid.ff",
+                    "path": "usermaps/zm_raid/zm_raid.ff",
+                    "size": 89378432,
+                    "hash": "E83160DCE455F680"
+                },
+                {
+                    "member": "zm_raid/zm_raid.iwd",
+                    "path": "usermaps/zm_raid/zm_raid.iwd",
+                    "size": 187963,
+                    "hash": "01234FCB7CF7C2BF"
+                },
+                {
+                    "member": "zm_raid/zz_unique_sounds_mp_raid.all.sabl",
+                    "path": "usermaps/zm_raid/zz_unique_sounds_mp_raid.all.sabl",
+                    "size": 244258784,
+                    "hash": "B76376CD9899A2BE"
+                },
+                {
+                    "member": "zm_raid/zz_unique_sounds_mp_raid.all.sabs",
+                    "path": "usermaps/zm_raid/zz_unique_sounds_mp_raid.all.sabs",
+                    "size": 195616848,
+                    "hash": "D720AD67F92936A7"
+                }
+            ]
         }
     ]
 }

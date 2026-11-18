@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_frostbite.zip",
             "size": 788123677,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "E458876B80DB7E5A",
+            "contents": [
+                {
+                    "member": "zm_frostbite/en_zm_frostbite.ff",
+                    "path": "usermaps/zm_frostbite/en_zm_frostbite.ff",
+                    "size": 512,
+                    "hash": "7367F91CCCCA1803"
+                },
+                {
+                    "member": "zm_frostbite/mpz_frostbite.ipak",
+                    "path": "usermaps/zm_frostbite/mpz_frostbite.ipak",
+                    "size": 312868864,
+                    "hash": "13C8BB8C7513FE2E"
+                },
+                {
+                    "member": "zm_frostbite/version.json",
+                    "path": "usermaps/zm_frostbite/version.json",
+                    "size": 177,
+                    "hash": "FE05CB7698D8EC5A"
+                },
+                {
+                    "member": "zm_frostbite/zm_frostbite.ff",
+                    "path": "usermaps/zm_frostbite/zm_frostbite.ff",
+                    "size": 93620224,
+                    "hash": "F467BA17C1A5A4A2"
+                },
+                {
+                    "member": "zm_frostbite/zm_frostbite.iwd",
+                    "path": "usermaps/zm_frostbite/zm_frostbite.iwd",
+                    "size": 190126,
+                    "hash": "C4DE596CB04AA96B"
+                },
+                {
+                    "member": "zm_frostbite/zz_unique_sounds_mp_frostbite.all.sabl",
+                    "path": "usermaps/zm_frostbite/zz_unique_sounds_mp_frostbite.all.sabl",
+                    "size": 243220352,
+                    "hash": "A5C8CB41DD8CAB64"
+                },
+                {
+                    "member": "zm_frostbite/zz_unique_sounds_mp_frostbite.all.sabs",
+                    "path": "usermaps/zm_frostbite/zz_unique_sounds_mp_frostbite.all.sabs",
+                    "size": 205634832,
+                    "hash": "FC68BDC33BB9E21D"
+                }
+            ]
         }
     ]
 }

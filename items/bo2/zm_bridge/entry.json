@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_bridge.zip",
             "size": 757002069,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "A64B1F3BE5C4B640",
+            "contents": [
+                {
+                    "member": "zm_bridge/en_zm_bridge.ff",
+                    "path": "usermaps/zm_bridge/en_zm_bridge.ff",
+                    "size": 512,
+                    "hash": "957A0BDB41FCBAEE"
+                },
+                {
+                    "member": "zm_bridge/mpz_bridge.ipak",
+                    "path": "usermaps/zm_bridge/mpz_bridge.ipak",
+                    "size": 282198016,
+                    "hash": "F9EE82E82EFEBB23"
+                },
+                {
+                    "member": "zm_bridge/version.json",
+                    "path": "usermaps/zm_bridge/version.json",
+                    "size": 174,
+                    "hash": "19710F404D90CF46"
+                },
+                {
+                    "member": "zm_bridge/zm_bridge.ff",
+                    "path": "usermaps/zm_bridge/zm_bridge.ff",
+                    "size": 91716480,
+                    "hash": "462347F84DAF8D74"
+                },
+                {
+                    "member": "zm_bridge/zm_bridge.iwd",
+                    "path": "usermaps/zm_bridge/zm_bridge.iwd",
+                    "size": 194649,
+                    "hash": "0DF443D240DC2526"
+                },
+                {
+                    "member": "zm_bridge/zz_unique_sounds_mp_bridge.all.sabl",
+                    "path": "usermaps/zm_bridge/zz_unique_sounds_mp_bridge.all.sabl",
+                    "size": 244822080,
+                    "hash": "B6CC86B5FF4193F1"
+                },
+                {
+                    "member": "zm_bridge/zz_unique_sounds_mp_bridge.all.sabs",
+                    "path": "usermaps/zm_bridge/zz_unique_sounds_mp_bridge.all.sabs",
+                    "size": 205003760,
+                    "hash": "CEE1D2EB4E3908A2"
+                }
+            ]
         }
     ]
 }

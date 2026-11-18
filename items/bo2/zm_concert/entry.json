@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_concert.zip",
             "size": 708458434,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "8941778A791F5769",
+            "contents": [
+                {
+                    "member": "zm_concert/en_zm_concert.ff",
+                    "path": "usermaps/zm_concert/en_zm_concert.ff",
+                    "size": 512,
+                    "hash": "E582670AD1A3322B"
+                },
+                {
+                    "member": "zm_concert/mpz_concert.ipak",
+                    "path": "usermaps/zm_concert/mpz_concert.ipak",
+                    "size": 247169024,
+                    "hash": "713255BB7E379B8E"
+                },
+                {
+                    "member": "zm_concert/version.json",
+                    "path": "usermaps/zm_concert/version.json",
+                    "size": 175,
+                    "hash": "C7B17BE75E24F17A"
+                },
+                {
+                    "member": "zm_concert/zm_concert.ff",
+                    "path": "usermaps/zm_concert/zm_concert.ff",
+                    "size": 87841664,
+                    "hash": "9C615AC1EFF13C3B"
+                },
+                {
+                    "member": "zm_concert/zm_concert.iwd",
+                    "path": "usermaps/zm_concert/zm_concert.iwd",
+                    "size": 191175,
+                    "hash": "0B16D799F21367B1"
+                },
+                {
+                    "member": "zm_concert/zz_unique_sounds_mp_concert.all.sabl",
+                    "path": "usermaps/zm_concert/zz_unique_sounds_mp_concert.all.sabl",
+                    "size": 234274784,
+                    "hash": "12D3C818736CF57A"
+                },
+                {
+                    "member": "zm_concert/zz_unique_sounds_mp_concert.all.sabs",
+                    "path": "usermaps/zm_concert/zz_unique_sounds_mp_concert.all.sabs",
+                    "size": 200399440,
+                    "hash": "FE6767A0CDE58724"
+                }
+            ]
         }
     ]
 }

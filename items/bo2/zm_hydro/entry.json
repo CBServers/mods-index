@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_hydro.zip",
             "size": 705795688,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "5BD074885C4F6A67",
+            "contents": [
+                {
+                    "member": "zm_hydro/en_zm_hydro.ff",
+                    "path": "usermaps/zm_hydro/en_zm_hydro.ff",
+                    "size": 512,
+                    "hash": "077822F8CDA5C31C"
+                },
+                {
+                    "member": "zm_hydro/mpz_hydro.ipak",
+                    "path": "usermaps/zm_hydro/mpz_hydro.ipak",
+                    "size": 230391808,
+                    "hash": "5BF5B231DC6F7847"
+                },
+                {
+                    "member": "zm_hydro/version.json",
+                    "path": "usermaps/zm_hydro/version.json",
+                    "size": 173,
+                    "hash": "369A4CEC7BA3DD25"
+                },
+                {
+                    "member": "zm_hydro/zm_hydro.ff",
+                    "path": "usermaps/zm_hydro/zm_hydro.ff",
+                    "size": 87668608,
+                    "hash": "E5DB19113C60DD41"
+                },
+                {
+                    "member": "zm_hydro/zm_hydro.iwd",
+                    "path": "usermaps/zm_hydro/zm_hydro.iwd",
+                    "size": 186903,
+                    "hash": "77BCD7EF69723396"
+                },
+                {
+                    "member": "zm_hydro/zz_unique_sounds_mp_hydro.all.sabl",
+                    "path": "usermaps/zm_hydro/zz_unique_sounds_mp_hydro.all.sabl",
+                    "size": 248382096,
+                    "hash": "E1E49279B484B7D6"
+                },
+                {
+                    "member": "zm_hydro/zz_unique_sounds_mp_hydro.all.sabs",
+                    "path": "usermaps/zm_hydro/zz_unique_sounds_mp_hydro.all.sabs",
+                    "size": 198674080,
+                    "hash": "ED9F4AA95058B503"
+                }
+            ]
         }
     ]
 }

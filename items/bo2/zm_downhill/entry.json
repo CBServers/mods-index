@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_downhill.zip",
             "size": 743744196,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "FB7CB11E3CEE331B",
+            "contents": [
+                {
+                    "member": "zm_downhill/en_zm_downhill.ff",
+                    "path": "usermaps/zm_downhill/en_zm_downhill.ff",
+                    "size": 512,
+                    "hash": "89D2AC34F7E0970C"
+                },
+                {
+                    "member": "zm_downhill/mpz_downhill.ipak",
+                    "path": "usermaps/zm_downhill/mpz_downhill.ipak",
+                    "size": 290029568,
+                    "hash": "712EE0BF644BE80A"
+                },
+                {
+                    "member": "zm_downhill/version.json",
+                    "path": "usermaps/zm_downhill/version.json",
+                    "size": 176,
+                    "hash": "098FC95A990BD95D"
+                },
+                {
+                    "member": "zm_downhill/zm_downhill.ff",
+                    "path": "usermaps/zm_downhill/zm_downhill.ff",
+                    "size": 92580800,
+                    "hash": "CB15140F49C610E7"
+                },
+                {
+                    "member": "zm_downhill/zm_downhill.iwd",
+                    "path": "usermaps/zm_downhill/zm_downhill.iwd",
+                    "size": 191574,
+                    "hash": "244A58FC32960C7D"
+                },
+                {
+                    "member": "zm_downhill/zz_unique_sounds_mp_downhill.all.sabl",
+                    "path": "usermaps/zm_downhill/zz_unique_sounds_mp_downhill.all.sabl",
+                    "size": 235017648,
+                    "hash": "D02827BAFA307771"
+                },
+                {
+                    "member": "zm_downhill/zz_unique_sounds_mp_downhill.all.sabs",
+                    "path": "usermaps/zm_downhill/zz_unique_sounds_mp_downhill.all.sabs",
+                    "size": 192345472,
+                    "hash": "7B67E70651437C36"
+                }
+            ]
         }
     ]
 }

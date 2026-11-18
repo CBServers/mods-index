@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_takeoff.zip",
             "size": 704040704,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "D8B7A02D8462E347",
+            "contents": [
+                {
+                    "member": "zm_takeoff/en_zm_takeoff.ff",
+                    "path": "usermaps/zm_takeoff/en_zm_takeoff.ff",
+                    "size": 512,
+                    "hash": "F572525BFC2CC64C"
+                },
+                {
+                    "member": "zm_takeoff/mpz_takeoff.ipak",
+                    "path": "usermaps/zm_takeoff/mpz_takeoff.ipak",
+                    "size": 232783872,
+                    "hash": "EB00B419792DD9F1"
+                },
+                {
+                    "member": "zm_takeoff/version.json",
+                    "path": "usermaps/zm_takeoff/version.json",
+                    "size": 175,
+                    "hash": "F918ED60625B440A"
+                },
+                {
+                    "member": "zm_takeoff/zm_takeoff.ff",
+                    "path": "usermaps/zm_takeoff/zm_takeoff.ff",
+                    "size": 87131264,
+                    "hash": "602FC06218BB02E4"
+                },
+                {
+                    "member": "zm_takeoff/zm_takeoff.iwd",
+                    "path": "usermaps/zm_takeoff/zm_takeoff.iwd",
+                    "size": 188803,
+                    "hash": "E56E8786A456A177"
+                },
+                {
+                    "member": "zm_takeoff/zz_unique_sounds_mp_takeoff.all.sabl",
+                    "path": "usermaps/zm_takeoff/zz_unique_sounds_mp_takeoff.all.sabl",
+                    "size": 242050192,
+                    "hash": "693D7194836FBF27"
+                },
+                {
+                    "member": "zm_takeoff/zz_unique_sounds_mp_takeoff.all.sabs",
+                    "path": "usermaps/zm_takeoff/zz_unique_sounds_mp_takeoff.all.sabs",
+                    "size": 202970624,
+                    "hash": "6779400B4204941C"
+                }
+            ]
         }
     ]
 }

@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_turbine.zip",
             "size": 650688463,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "EBF8B9968AE7DC33",
+            "contents": [
+                {
+                    "member": "zm_turbine/en_zm_turbine.ff",
+                    "path": "usermaps/zm_turbine/en_zm_turbine.ff",
+                    "size": 512,
+                    "hash": "A087940DBEAC36DE"
+                },
+                {
+                    "member": "zm_turbine/mpz_turbine.ipak",
+                    "path": "usermaps/zm_turbine/mpz_turbine.ipak",
+                    "size": 169279488,
+                    "hash": "344D306B0124651D"
+                },
+                {
+                    "member": "zm_turbine/version.json",
+                    "path": "usermaps/zm_turbine/version.json",
+                    "size": 175,
+                    "hash": "20275124EBEF6FA1"
+                },
+                {
+                    "member": "zm_turbine/zm_turbine.ff",
+                    "path": "usermaps/zm_turbine/zm_turbine.ff",
+                    "size": 89531072,
+                    "hash": "7BF5ED84CFCAA6FE"
+                },
+                {
+                    "member": "zm_turbine/zm_turbine.iwd",
+                    "path": "usermaps/zm_turbine/zm_turbine.iwd",
+                    "size": 198129,
+                    "hash": "5933FE703BBFAA53"
+                },
+                {
+                    "member": "zm_turbine/zz_unique_sounds_mp_turbine.all.sabl",
+                    "path": "usermaps/zm_turbine/zz_unique_sounds_mp_turbine.all.sabl",
+                    "size": 238629600,
+                    "hash": "6B3DC7947C8E6DE0"
+                },
+                {
+                    "member": "zm_turbine/zz_unique_sounds_mp_turbine.all.sabs",
+                    "path": "usermaps/zm_turbine/zz_unique_sounds_mp_turbine.all.sabs",
+                    "size": 205282160,
+                    "hash": "BF4B743E55C50D16"
+                }
+            ]
         }
     ]
 }

@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_village.zip",
             "size": 660877337,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "7E6EAF0669589587",
+            "contents": [
+                {
+                    "member": "zm_village/en_zm_village.ff",
+                    "path": "usermaps/zm_village/en_zm_village.ff",
+                    "size": 512,
+                    "hash": "1EE23B39D9A3545B"
+                },
+                {
+                    "member": "zm_village/mpz_village.ipak",
+                    "path": "usermaps/zm_village/mpz_village.ipak",
+                    "size": 187957248,
+                    "hash": "15FDFD950C21C7E7"
+                },
+                {
+                    "member": "zm_village/version.json",
+                    "path": "usermaps/zm_village/version.json",
+                    "size": 175,
+                    "hash": "A5566F4A5DE86987"
+                },
+                {
+                    "member": "zm_village/zm_village.ff",
+                    "path": "usermaps/zm_village/zm_village.ff",
+                    "size": 88994304,
+                    "hash": "0E955FC839C7AD4E"
+                },
+                {
+                    "member": "zm_village/zm_village.iwd",
+                    "path": "usermaps/zm_village/zm_village.iwd",
+                    "size": 186299,
+                    "hash": "BAC96395EB4B19F3"
+                },
+                {
+                    "member": "zm_village/zz_unique_sounds_mp_village.all.sabl",
+                    "path": "usermaps/zm_village/zz_unique_sounds_mp_village.all.sabl",
+                    "size": 242249920,
+                    "hash": "8581C3D39307507E"
+                },
+                {
+                    "member": "zm_village/zz_unique_sounds_mp_village.all.sabs",
+                    "path": "usermaps/zm_village/zz_unique_sounds_mp_village.all.sabs",
+                    "size": 196339264,
+                    "hash": "04A5391175A2091D"
+                }
+            ]
         }
     ]
 }

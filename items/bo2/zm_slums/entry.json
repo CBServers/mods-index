@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_slums.zip",
             "size": 626931036,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "1F4AC6FCA2D6D261",
+            "contents": [
+                {
+                    "member": "zm_slums/en_zm_slums.ff",
+                    "path": "usermaps/zm_slums/en_zm_slums.ff",
+                    "size": 704,
+                    "hash": "007AF274314AAD76"
+                },
+                {
+                    "member": "zm_slums/mpz_slums.ipak",
+                    "path": "usermaps/zm_slums/mpz_slums.ipak",
+                    "size": 144441344,
+                    "hash": "EAAD80E05A340E44"
+                },
+                {
+                    "member": "zm_slums/version.json",
+                    "path": "usermaps/zm_slums/version.json",
+                    "size": 173,
+                    "hash": "409C37204DED973E"
+                },
+                {
+                    "member": "zm_slums/zm_slums.ff",
+                    "path": "usermaps/zm_slums/zm_slums.ff",
+                    "size": 94402304,
+                    "hash": "0E1A6CCA65C52D33"
+                },
+                {
+                    "member": "zm_slums/zm_slums.iwd",
+                    "path": "usermaps/zm_slums/zm_slums.iwd",
+                    "size": 189753,
+                    "hash": "A148E99B1406261E"
+                },
+                {
+                    "member": "zm_slums/zz_unique_sounds_mp_slums.all.sabl",
+                    "path": "usermaps/zm_slums/zz_unique_sounds_mp_slums.all.sabl",
+                    "size": 242703744,
+                    "hash": "6534D01DD540FEB5"
+                },
+                {
+                    "member": "zm_slums/zz_unique_sounds_mp_slums.all.sabs",
+                    "path": "usermaps/zm_slums/zz_unique_sounds_mp_slums.all.sabs",
+                    "size": 195500384,
+                    "hash": "167E9E0C34C50784"
+                }
+            ]
         }
     ]
 }

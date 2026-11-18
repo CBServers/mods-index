@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_pod.zip",
             "size": 728122969,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "1AFFDBC361AE0FB6",
+            "contents": [
+                {
+                    "member": "zm_pod/en_zm_pod.ff",
+                    "path": "usermaps/zm_pod/en_zm_pod.ff",
+                    "size": 512,
+                    "hash": "01B5DD119D0616F4"
+                },
+                {
+                    "member": "zm_pod/mpz_pod.ipak",
+                    "path": "usermaps/zm_pod/mpz_pod.ipak",
+                    "size": 262635520,
+                    "hash": "BA274160255C91A6"
+                },
+                {
+                    "member": "zm_pod/version.json",
+                    "path": "usermaps/zm_pod/version.json",
+                    "size": 171,
+                    "hash": "46BB17BB2EEF5688"
+                },
+                {
+                    "member": "zm_pod/zm_pod.ff",
+                    "path": "usermaps/zm_pod/zm_pod.ff",
+                    "size": 89408448,
+                    "hash": "25956C2F800634D5"
+                },
+                {
+                    "member": "zm_pod/zm_pod.iwd",
+                    "path": "usermaps/zm_pod/zm_pod.iwd",
+                    "size": 188615,
+                    "hash": "BD9D2BA724C1AF47"
+                },
+                {
+                    "member": "zm_pod/zz_unique_sounds_mp_pod.all.sabl",
+                    "path": "usermaps/zm_pod/zz_unique_sounds_mp_pod.all.sabl",
+                    "size": 240199232,
+                    "hash": "09FF2B2767CEF053"
+                },
+                {
+                    "member": "zm_pod/zz_unique_sounds_mp_pod.all.sabs",
+                    "path": "usermaps/zm_pod/zz_unique_sounds_mp_pod.all.sabs",
+                    "size": 197593120,
+                    "hash": "6156DD79B58730B5"
+                }
+            ]
         }
     ]
 }

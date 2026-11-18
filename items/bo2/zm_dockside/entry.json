@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_dockside.zip",
             "size": 629110552,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "25C7F09F87D3C7CA",
+            "contents": [
+                {
+                    "member": "zm_dockside/en_zm_dockside.ff",
+                    "path": "usermaps/zm_dockside/en_zm_dockside.ff",
+                    "size": 512,
+                    "hash": "A8ABC5C6E44AF185"
+                },
+                {
+                    "member": "zm_dockside/mpz_dockside.ipak",
+                    "path": "usermaps/zm_dockside/mpz_dockside.ipak",
+                    "size": 152698880,
+                    "hash": "8E0017F90B9E03DA"
+                },
+                {
+                    "member": "zm_dockside/version.json",
+                    "path": "usermaps/zm_dockside/version.json",
+                    "size": 176,
+                    "hash": "115E3C98C22C945A"
+                },
+                {
+                    "member": "zm_dockside/zm_dockside.ff",
+                    "path": "usermaps/zm_dockside/zm_dockside.ff",
+                    "size": 87015488,
+                    "hash": "7058232B12C1AAFA"
+                },
+                {
+                    "member": "zm_dockside/zm_dockside.iwd",
+                    "path": "usermaps/zm_dockside/zm_dockside.iwd",
+                    "size": 200605,
+                    "hash": "6076C054FAA29A51"
+                },
+                {
+                    "member": "zm_dockside/zz_unique_sounds_mp_dockside.all.sabl",
+                    "path": "usermaps/zm_dockside/zz_unique_sounds_mp_dockside.all.sabl",
+                    "size": 238739488,
+                    "hash": "AF5182AFFA45700A"
+                },
+                {
+                    "member": "zm_dockside/zz_unique_sounds_mp_dockside.all.sabs",
+                    "path": "usermaps/zm_dockside/zz_unique_sounds_mp_dockside.all.sabs",
+                    "size": 200936208,
+                    "hash": "22191115BEDBAB07"
+                }
+            ]
         }
     ]
 }

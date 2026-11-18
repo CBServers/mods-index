@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_mirage.zip",
             "size": 746275194,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "80212C8CC8AEA276",
+            "contents": [
+                {
+                    "member": "zm_mirage/en_zm_mirage.ff",
+                    "path": "usermaps/zm_mirage/en_zm_mirage.ff",
+                    "size": 512,
+                    "hash": "D32AFB780889B6F4"
+                },
+                {
+                    "member": "zm_mirage/mpz_mirage.ipak",
+                    "path": "usermaps/zm_mirage/mpz_mirage.ipak",
+                    "size": 286654464,
+                    "hash": "420A4A7AED8187B2"
+                },
+                {
+                    "member": "zm_mirage/version.json",
+                    "path": "usermaps/zm_mirage/version.json",
+                    "size": 174,
+                    "hash": "ADD2EAABC4B04102"
+                },
+                {
+                    "member": "zm_mirage/zm_mirage.ff",
+                    "path": "usermaps/zm_mirage/zm_mirage.ff",
+                    "size": 95012032,
+                    "hash": "D91CD4DEA273328A"
+                },
+                {
+                    "member": "zm_mirage/zm_mirage.iwd",
+                    "path": "usermaps/zm_mirage/zm_mirage.iwd",
+                    "size": 188218,
+                    "hash": "F1A8C304E36C047D"
+                },
+                {
+                    "member": "zm_mirage/zz_unique_sounds_mp_mirage.all.sabl",
+                    "path": "usermaps/zm_mirage/zz_unique_sounds_mp_mirage.all.sabl",
+                    "size": 234055440,
+                    "hash": "58B381C9E537BB23"
+                },
+                {
+                    "member": "zm_mirage/zz_unique_sounds_mp_mirage.all.sabs",
+                    "path": "usermaps/zm_mirage/zz_unique_sounds_mp_mirage.all.sabs",
+                    "size": 194690640,
+                    "hash": "C67E894A06261E87"
+                }
+            ]
         }
     ]
 }

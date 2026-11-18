@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_paintball.zip",
             "size": 737167723,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "531082E60C70BC9E",
+            "contents": [
+                {
+                    "member": "zm_paintball/en_zm_paintball.ff",
+                    "path": "usermaps/zm_paintball/en_zm_paintball.ff",
+                    "size": 512,
+                    "hash": "FAE427488BC8A502"
+                },
+                {
+                    "member": "zm_paintball/mpz_paintball.ipak",
+                    "path": "usermaps/zm_paintball/mpz_paintball.ipak",
+                    "size": 276463616,
+                    "hash": "F35C25B8538E1A3D"
+                },
+                {
+                    "member": "zm_paintball/version.json",
+                    "path": "usermaps/zm_paintball/version.json",
+                    "size": 177,
+                    "hash": "3F36CDBD713A3CA5"
+                },
+                {
+                    "member": "zm_paintball/zm_paintball.ff",
+                    "path": "usermaps/zm_paintball/zm_paintball.ff",
+                    "size": 89282368,
+                    "hash": "AD16E1DC2BF18068"
+                },
+                {
+                    "member": "zm_paintball/zm_paintball.iwd",
+                    "path": "usermaps/zm_paintball/zm_paintball.iwd",
+                    "size": 187763,
+                    "hash": "E2935618F3F8E472"
+                },
+                {
+                    "member": "zm_paintball/zz_unique_sounds_mp_paintball.all.sabl",
+                    "path": "usermaps/zm_paintball/zz_unique_sounds_mp_paintball.all.sabl",
+                    "size": 236195936,
+                    "hash": "85EB561C09112B72"
+                },
+                {
+                    "member": "zm_paintball/zz_unique_sounds_mp_paintball.all.sabs",
+                    "path": "usermaps/zm_paintball/zz_unique_sounds_mp_paintball.all.sabs",
+                    "size": 199436880,
+                    "hash": "AD108110F22AA99E"
+                }
+            ]
         }
     ]
 }

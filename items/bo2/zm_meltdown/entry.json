@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_meltdown.zip",
             "size": 636346186,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "BFB5966DFF3E0D13",
+            "contents": [
+                {
+                    "member": "zm_meltdown/en_zm_meltdown.ff",
+                    "path": "usermaps/zm_meltdown/en_zm_meltdown.ff",
+                    "size": 512,
+                    "hash": "5123C2FBC94012EE"
+                },
+                {
+                    "member": "zm_meltdown/mpz_meltdown.ipak",
+                    "path": "usermaps/zm_meltdown/mpz_meltdown.ipak",
+                    "size": 156303360,
+                    "hash": "14CB72093448A5F7"
+                },
+                {
+                    "member": "zm_meltdown/version.json",
+                    "path": "usermaps/zm_meltdown/version.json",
+                    "size": 176,
+                    "hash": "CE89DC5F1C84E09E"
+                },
+                {
+                    "member": "zm_meltdown/zm_meltdown.ff",
+                    "path": "usermaps/zm_meltdown/zm_meltdown.ff",
+                    "size": 89013824,
+                    "hash": "986044DD054D8665"
+                },
+                {
+                    "member": "zm_meltdown/zm_meltdown.iwd",
+                    "path": "usermaps/zm_meltdown/zm_meltdown.iwd",
+                    "size": 190422,
+                    "hash": "B81DC7B3887357EF"
+                },
+                {
+                    "member": "zm_meltdown/zz_unique_sounds_mp_meltdown.all.sabl",
+                    "path": "usermaps/zm_meltdown/zz_unique_sounds_mp_meltdown.all.sabl",
+                    "size": 244860576,
+                    "hash": "81C2BD2B7EAC0EA8"
+                },
+                {
+                    "member": "zm_meltdown/zz_unique_sounds_mp_meltdown.all.sabs",
+                    "path": "usermaps/zm_meltdown/zz_unique_sounds_mp_meltdown.all.sabs",
+                    "size": 197076944,
+                    "hash": "E3534683A1D7C2A3"
+                }
+            ]
         }
     ]
 }

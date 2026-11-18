@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_drone.zip",
             "size": 635819057,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "7DEC1392570638D5",
+            "contents": [
+                {
+                    "member": "zm_drone/en_zm_drone.ff",
+                    "path": "usermaps/zm_drone/en_zm_drone.ff",
+                    "size": 512,
+                    "hash": "62D52A222037E3A3"
+                },
+                {
+                    "member": "zm_drone/mpz_drone.ipak",
+                    "path": "usermaps/zm_drone/mpz_drone.ipak",
+                    "size": 143654912,
+                    "hash": "14A44E38AACEE30C"
+                },
+                {
+                    "member": "zm_drone/version.json",
+                    "path": "usermaps/zm_drone/version.json",
+                    "size": 173,
+                    "hash": "07C79FDE49E88CF4"
+                },
+                {
+                    "member": "zm_drone/zm_drone.ff",
+                    "path": "usermaps/zm_drone/zm_drone.ff",
+                    "size": 87846656,
+                    "hash": "06922B3022E3CA4D"
+                },
+                {
+                    "member": "zm_drone/zm_drone.iwd",
+                    "path": "usermaps/zm_drone/zm_drone.iwd",
+                    "size": 200873,
+                    "hash": "2F9903EE654535BB"
+                },
+                {
+                    "member": "zm_drone/zz_unique_sounds_mp_drone.all.sabl",
+                    "path": "usermaps/zm_drone/zz_unique_sounds_mp_drone.all.sabl",
+                    "size": 244443712,
+                    "hash": "364A48B67CE0F011"
+                },
+                {
+                    "member": "zm_drone/zz_unique_sounds_mp_drone.all.sabs",
+                    "path": "usermaps/zm_drone/zz_unique_sounds_mp_drone.all.sabs",
+                    "size": 210780016,
+                    "hash": "2F6E224BB43252F1"
+                }
+            ]
         }
     ]
 }

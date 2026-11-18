@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_nightclub.zip",
             "size": 660279878,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "5722792D1264EA38",
+            "contents": [
+                {
+                    "member": "zm_nightclub/en_zm_nightclub.ff",
+                    "path": "usermaps/zm_nightclub/en_zm_nightclub.ff",
+                    "size": 704,
+                    "hash": "F1E5D02CA1D6D7B9"
+                },
+                {
+                    "member": "zm_nightclub/mpz_nightclub.ipak",
+                    "path": "usermaps/zm_nightclub/mpz_nightclub.ipak",
+                    "size": 147456000,
+                    "hash": "3D50422CBBA635E7"
+                },
+                {
+                    "member": "zm_nightclub/version.json",
+                    "path": "usermaps/zm_nightclub/version.json",
+                    "size": 177,
+                    "hash": "AB29AE9852986E28"
+                },
+                {
+                    "member": "zm_nightclub/zm_nightclub.ff",
+                    "path": "usermaps/zm_nightclub/zm_nightclub.ff",
+                    "size": 89541184,
+                    "hash": "E7D61BC92EAB94C5"
+                },
+                {
+                    "member": "zm_nightclub/zm_nightclub.iwd",
+                    "path": "usermaps/zm_nightclub/zm_nightclub.iwd",
+                    "size": 187701,
+                    "hash": "E30EC9A262C5FB36"
+                },
+                {
+                    "member": "zm_nightclub/zz_unique_sounds_mp_nightclub.all.sabl",
+                    "path": "usermaps/zm_nightclub/zz_unique_sounds_mp_nightclub.all.sabl",
+                    "size": 234237536,
+                    "hash": "D3BD535D94EFDADA"
+                },
+                {
+                    "member": "zm_nightclub/zz_unique_sounds_mp_nightclub.all.sabs",
+                    "path": "usermaps/zm_nightclub/zz_unique_sounds_mp_nightclub.all.sabs",
+                    "size": 237964336,
+                    "hash": "0EC9864093968649"
+                }
+            ]
         }
     ]
 }

@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_magma.zip",
             "size": 735291200,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "A0C2597349BFC817",
+            "contents": [
+                {
+                    "member": "zm_magma/en_zm_magma.ff",
+                    "path": "usermaps/zm_magma/en_zm_magma.ff",
+                    "size": 512,
+                    "hash": "4D5523CB407568EF"
+                },
+                {
+                    "member": "zm_magma/mpz_magma.ipak",
+                    "path": "usermaps/zm_magma/mpz_magma.ipak",
+                    "size": 265060352,
+                    "hash": "D470F0CD0FBAD53B"
+                },
+                {
+                    "member": "zm_magma/version.json",
+                    "path": "usermaps/zm_magma/version.json",
+                    "size": 173,
+                    "hash": "F76347A7145416EC"
+                },
+                {
+                    "member": "zm_magma/zm_magma.ff",
+                    "path": "usermaps/zm_magma/zm_magma.ff",
+                    "size": 93062208,
+                    "hash": "5D8F06EA43ECCC94"
+                },
+                {
+                    "member": "zm_magma/zm_magma.iwd",
+                    "path": "usermaps/zm_magma/zm_magma.iwd",
+                    "size": 191682,
+                    "hash": "78A288674BA9C336"
+                },
+                {
+                    "member": "zm_magma/zz_unique_sounds_mp_magma.all.sabl",
+                    "path": "usermaps/zm_magma/zz_unique_sounds_mp_magma.all.sabl",
+                    "size": 243452496,
+                    "hash": "5AD55D2D1797B100"
+                },
+                {
+                    "member": "zm_magma/zz_unique_sounds_mp_magma.all.sabs",
+                    "path": "usermaps/zm_magma/zz_unique_sounds_mp_magma.all.sabs",
+                    "size": 197156448,
+                    "hash": "AFD9CD55535042CE"
+                }
+            ]
         }
     ]
 }

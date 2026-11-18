@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_socotra.zip",
             "size": 639404231,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "6A86BDD5B2656E4A",
+            "contents": [
+                {
+                    "member": "zm_socotra/en_zm_socotra.ff",
+                    "path": "usermaps/zm_socotra/en_zm_socotra.ff",
+                    "size": 512,
+                    "hash": "C818D213365A358A"
+                },
+                {
+                    "member": "zm_socotra/mpz_socotra.ipak",
+                    "path": "usermaps/zm_socotra/mpz_socotra.ipak",
+                    "size": 157450240,
+                    "hash": "33EE364A330FE1DA"
+                },
+                {
+                    "member": "zm_socotra/version.json",
+                    "path": "usermaps/zm_socotra/version.json",
+                    "size": 175,
+                    "hash": "FFF5C0D87B1907E4"
+                },
+                {
+                    "member": "zm_socotra/zm_socotra.ff",
+                    "path": "usermaps/zm_socotra/zm_socotra.ff",
+                    "size": 91139584,
+                    "hash": "D1BDD1F1E2C9F030"
+                },
+                {
+                    "member": "zm_socotra/zm_socotra.iwd",
+                    "path": "usermaps/zm_socotra/zm_socotra.iwd",
+                    "size": 191509,
+                    "hash": "03663D3D5CB8208D"
+                },
+                {
+                    "member": "zm_socotra/zz_unique_sounds_mp_socotra.all.sabl",
+                    "path": "usermaps/zm_socotra/zz_unique_sounds_mp_socotra.all.sabl",
+                    "size": 246022544,
+                    "hash": "1CB027930E651C1C"
+                },
+                {
+                    "member": "zm_socotra/zz_unique_sounds_mp_socotra.all.sabs",
+                    "path": "usermaps/zm_socotra/zz_unique_sounds_mp_socotra.all.sabs",
+                    "size": 196697872,
+                    "hash": "089B87501A9DFF14"
+                }
+            ]
         }
     ]
 }

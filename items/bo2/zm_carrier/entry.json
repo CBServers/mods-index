@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_carrier.zip",
             "size": 641527490,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "1299078E2131D82A",
+            "contents": [
+                {
+                    "member": "zm_carrier/en_zm_carrier.ff",
+                    "path": "usermaps/zm_carrier/en_zm_carrier.ff",
+                    "size": 512,
+                    "hash": "998B907899B59E04"
+                },
+                {
+                    "member": "zm_carrier/mpz_carrier.ipak",
+                    "path": "usermaps/zm_carrier/mpz_carrier.ipak",
+                    "size": 183730176,
+                    "hash": "C4C6F61349F62ABE"
+                },
+                {
+                    "member": "zm_carrier/version.json",
+                    "path": "usermaps/zm_carrier/version.json",
+                    "size": 175,
+                    "hash": "CDC6823624754128"
+                },
+                {
+                    "member": "zm_carrier/zm_carrier.ff",
+                    "path": "usermaps/zm_carrier/zm_carrier.ff",
+                    "size": 83375680,
+                    "hash": "FD468102537A3AE9"
+                },
+                {
+                    "member": "zm_carrier/zm_carrier.iwd",
+                    "path": "usermaps/zm_carrier/zm_carrier.iwd",
+                    "size": 185582,
+                    "hash": "2773B64C3F0C1FFA"
+                },
+                {
+                    "member": "zm_carrier/zz_unique_sounds_mp_carrier.all.sabl",
+                    "path": "usermaps/zm_carrier/zz_unique_sounds_mp_carrier.all.sabl",
+                    "size": 234761280,
+                    "hash": "89759B54D3105E0D"
+                },
+                {
+                    "member": "zm_carrier/zz_unique_sounds_mp_carrier.all.sabs",
+                    "path": "usermaps/zm_carrier/zz_unique_sounds_mp_carrier.all.sabs",
+                    "size": 192494448,
+                    "hash": "835373C9EF677291"
+                }
+            ]
         }
     ]
 }

@@ -9,7 +9,28 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/mod-2026-10-02/mod_to_launch_mp_maps_in_zombies.zip",
             "size": 43154977,
-            "into": "mods"
+            "into": "mods",
+            "hash": "615552C45A2F493E",
+            "contents": [
+                {
+                    "member": "mod_to_launch_mp_maps_in_zombies/mod.ff",
+                    "path": "mods/mod_to_launch_mp_maps_in_zombies/mod.ff",
+                    "size": 5120,
+                    "hash": "97CD883AD408C593"
+                },
+                {
+                    "member": "mod_to_launch_mp_maps_in_zombies/mod.iwd",
+                    "path": "mods/mod_to_launch_mp_maps_in_zombies/mod.iwd",
+                    "size": 43352728,
+                    "hash": "428F3BB92FB2F0C4"
+                },
+                {
+                    "member": "mod_to_launch_mp_maps_in_zombies/mod.json",
+                    "path": "mods/mod_to_launch_mp_maps_in_zombies/mod.json",
+                    "size": 295,
+                    "hash": "BCD1C31FC317E09D"
+                }
+            ]
         }
     ]
 }

@@ -12,7 +12,52 @@
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_nuketown_2020.zip",
             "size": 721332273,
-            "into": "usermaps"
+            "into": "usermaps",
+            "hash": "C32EB56EBF77EC8B",
+            "contents": [
+                {
+                    "member": "zm_nuketown_2020/en_zm_nuketown_2020.ff",
+                    "path": "usermaps/zm_nuketown_2020/en_zm_nuketown_2020.ff",
+                    "size": 512,
+                    "hash": "D902B6E270D70914"
+                },
+                {
+                    "member": "zm_nuketown_2020/mpz_nuketown_2020.ipak",
+                    "path": "usermaps/zm_nuketown_2020/mpz_nuketown_2020.ipak",
+                    "size": 247332864,
+                    "hash": "A61EA344B5F519D2"
+                },
+                {
+                    "member": "zm_nuketown_2020/version.json",
+                    "path": "usermaps/zm_nuketown_2020/version.json",
+                    "size": 181,
+                    "hash": "0730AA01D4A2AA79"
+                },
+                {
+                    "member": "zm_nuketown_2020/zm_nuketown_2020.ff",
+                    "path": "usermaps/zm_nuketown_2020/zm_nuketown_2020.ff",
+                    "size": 92003392,
+                    "hash": "18B93AB41EBDDFE6"
+                },
+                {
+                    "member": "zm_nuketown_2020/zm_nuketown_2020.iwd",
+                    "path": "usermaps/zm_nuketown_2020/zm_nuketown_2020.iwd",
+                    "size": 187285,
+                    "hash": "474BC60619B4EB50"
+                },
+                {
+                    "member": "zm_nuketown_2020/zz_unique_sounds_mp_nuketown_2020.all.sabl",
+                    "path": "usermaps/zm_nuketown_2020/zz_unique_sounds_mp_nuketown_2020.all.sabl",
+                    "size": 246492464,
+                    "hash": "CD7EE42B4377E19F"
+                },
+                {
+                    "member": "zm_nuketown_2020/zz_unique_sounds_mp_nuketown_2020.all.sabs",
+                    "path": "usermaps/zm_nuketown_2020/zz_unique_sounds_mp_nuketown_2020.all.sabs",
+                    "size": 198598960,
+                    "hash": "A28D7C3912E5A2F8"
+                }
+            ]
         }
     ]
 }
