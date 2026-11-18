@@ -1,10 +1,14 @@
 import json
+import os
 import re
+import stat
 import struct
 import subprocess
+import tempfile
 import urllib.error
 import urllib.parse
 import urllib.request
+import zipfile
 from pathlib import Path
 
 import jsonschema
@@ -19,6 +23,12 @@ HASH_COMMIT_SUBJECT = "fill hashes"
 RESERVED_NAMES = {"con", "prn", "aux", "nul", *(f"com{i}" for i in range(1, 10)), *(f"lpt{i}" for i in range(1, 10))}
 INVALID_PATH_CHARS = set('<>:"|?*\\')
 ID_PATTERN = re.compile(r"^[a-z0-9][a-z0-9_-]{0,63}$")
+MAX_PATH = 200
+MAX_MEMBER = 400
+MAX_ENTRY_FILES = 4000
+ARCHIVE_SOURCE = ("root", "url", "parts", "size", "into", "from", "exclude")
+ALWAYS_SKIPPED = {".ds_store", "thumbs.db"}
+LIST_WINDOW = 1 << 16
 
 
 class DownloadError(Exception):
@@ -33,11 +43,35 @@ class Entry:
         self.folder = folder
         self.where = f"items/{game}/{entry_id}"
         self.source = f"{self.where}/{ENTRY_FILE}"
+        # Archive index -> members from a live listing, for archives whose contents are not filled in yet.
+        self.listed = {}
 
     @property
     def files(self):
         files = self.data.get("files") if isinstance(self.data, dict) else None
         return files if isinstance(files, list) else []
+
+    @property
+    def archives(self):
+        archives = self.data.get("archives") if isinstance(self.data, dict) else None
+        return archives if isinstance(archives, list) else []
+
+    def archive_rows(self, index):
+        archive = self.archives[index]
+        return archive["contents"] if "contents" in archive else self.listed.get(index, [])
+
+    @property
+    def installed_files(self):
+        files = list(self.files)
+        for index, archive in enumerate(self.archives):
+            for row in self.archive_rows(index):
+                file = {"path": row["path"], "size": row["size"], "archive": index, "member": row["member"]}
+                if "root" in archive:
+                    file["root"] = archive["root"]
+                if "hash" in row:
+                    file["hash"] = row["hash"]
+                files.append(file)
+        return files
 
     @property
     def images(self):
@@ -121,6 +155,158 @@ def resolve_candidates(url, hosts):
     if url.startswith("cdn:"):
         return [base + urllib.parse.quote(url[len("cdn:"):]) for base in hosts["cdn"]]
     return [url]
+
+
+def archive_name(archive):
+    urls = file_urls(archive)
+    return urls[0].rsplit("/", 1)[-1] if urls else "archive"
+
+
+def archive_where(entry, index):
+    return f"{entry.source} archives/{index} ({archive_name(entry.archives[index])})"
+
+
+def is_symlink(info):
+    return info.create_system == 3 and stat.S_ISLNK(info.external_attr >> 16)
+
+
+def map_archive(archive, infos):
+    """Applies from, exclude and into to a zip listing. Returns ([{member, path, size}], [errors])."""
+    into = archive.get("into", "")
+    source = archive.get("from", "")
+    prefix = f"{source}/" if source else ""
+    exclude = set(archive.get("exclude", []))
+    # orig_filename is the name as stored; zipfile rewrites backslashes on Windows.
+    names = {info.orig_filename for info in infos}
+    errors = [f'exclude lists "{name}", which is not in the archive' for name in sorted(exclude - names)]
+    rows = []
+    for info in infos:
+        name = info.orig_filename
+        segments = name.split("/")
+        if name.endswith("/") or segments[0] == "__MACOSX" or segments[-1].lower() in ALWAYS_SKIPPED or name in exclude:
+            continue
+        if prefix and not name.startswith(prefix):
+            continue
+        if "\\" in name or name.startswith("/") or re.match(r"^[A-Za-z]:", name):
+            errors.append(f'"{name}" uses backslashes or an absolute path; rezip it with relative folders')
+            continue
+        if not name.isascii() and not info.flag_bits & 0x800:
+            errors.append(f'"{name}" has a non-ASCII name not stored as UTF-8; rezip it with a tool that writes UTF-8 names')
+            continue
+        if info.flag_bits & 0x1:
+            errors.append(f'"{name}" is encrypted')
+            continue
+        if info.compress_type not in (zipfile.ZIP_STORED, zipfile.ZIP_DEFLATED):
+            errors.append(f'"{name}" uses compression method {info.compress_type}; only stored and deflate are supported')
+            continue
+        if is_symlink(info):
+            errors.append(f'"{name}" is a symbolic link')
+            continue
+        relative = name[len(prefix):]
+        path = f"{into}/{relative}" if into else relative
+        message = path_error(path)
+        if not message and len(path) > MAX_PATH:
+            message = f"is longer than {MAX_PATH} characters"
+        if not message and len(name) > MAX_MEMBER:
+            message = f"has a member name longer than {MAX_MEMBER} characters"
+        if message:
+            errors.append(f'"{name}" installs to "{path}", which {message}; add it to exclude if it is not needed')
+            continue
+        rows.append({"member": name, "path": path, "size": info.file_size})
+    if not rows and not errors:
+        errors.append("installs nothing; check from and exclude")
+    return rows, errors
+
+
+class RemoteArchive:
+    """A read-only, seekable view of an archive over HTTP range requests, so zipfile reads only the directory."""
+
+    def __init__(self, archive, hosts, open_url, timeout=60, retries=3):
+        self.open_url = open_url
+        self.timeout = timeout
+        self.retries = retries
+        self.requests = 0
+        self.parts = []
+        start = 0
+        for url in file_urls(archive):
+            candidates = resolve_candidates(url, hosts)
+            _, total = self._get(candidates, "bytes=0-0")
+            self.parts.append((candidates, start, total))
+            start += total
+        self.size = start
+        if self.size != archive["size"]:
+            raise DownloadError(f"the archive is {self.size} bytes but size says {archive['size']}")
+        self.position = 0
+        self.window = (0, b"")
+
+    def _get(self, candidates, byte_range):
+        failure = None
+        for _ in range(self.retries):
+            for candidate in candidates:
+                request = urllib.request.Request(candidate, headers={"User-Agent": USER_AGENT, "Range": byte_range})
+                try:
+                    self.requests += 1
+                    with self.open_url(request, timeout=self.timeout) as response:
+                        if (response.headers.get("Content-Type") or "").lower().startswith("text/html"):
+                            raise DownloadError(f"{candidate} returned a web page, not a file")
+                        match = re.match(r"^bytes (\d+)-(\d+)/(\d+)$", response.headers.get("Content-Range") or "")
+                        if getattr(response, "status", 200) != 206 or not match:
+                            raise DownloadError(f"{candidate} does not answer range requests")
+                        body = response.read(int(match.group(2)) - int(match.group(1)) + 1)
+                        return body, int(match.group(3))
+                except DownloadError:
+                    raise
+                except (urllib.error.URLError, OSError, ValueError) as error:
+                    failure = f"{candidate}: {error}"
+        raise DownloadError(failure)
+
+    def _fetch(self, offset, length):
+        chunks = []
+        for candidates, start, total in self.parts:
+            end = start + total
+            if offset >= end or offset + length <= start or length <= 0:
+                continue
+            first = max(offset, start)
+            last = min(offset + length, end) - 1
+            body, _ = self._get(candidates, f"bytes={first - start}-{last - start}")
+            if len(body) != last - first + 1:
+                raise DownloadError("a range request returned the wrong number of bytes")
+            chunks.append(body)
+        return b"".join(chunks)
+
+    def read(self, size=-1):
+        if size is None or size < 0:
+            size = self.size - self.position
+        size = max(0, min(size, self.size - self.position))
+        start, data = self.window
+        if not (start <= self.position and self.position + size <= start + len(data)):
+            length = min(max(size, LIST_WINDOW), self.size - self.position)
+            self.window = (self.position, self._fetch(self.position, length))
+            start, data = self.window
+        chunk = data[self.position - start:self.position - start + size]
+        self.position += len(chunk)
+        return chunk
+
+    def seek(self, offset, whence=0):
+        base = {0: 0, 1: self.position, 2: self.size}[whence]
+        self.position = max(0, base + offset)
+        return self.position
+
+    def tell(self):
+        return self.position
+
+    def seekable(self):
+        return True
+
+
+def list_archive(archive, hosts, open_url=None, timeout=60):
+    """Lists an archive's members from its central directory without downloading it."""
+    remote = RemoteArchive(archive, hosts, open_url or default_opener(hosts), timeout)
+    try:
+        with zipfile.ZipFile(remote) as zf:
+            return zf.infolist()
+    except zipfile.BadZipFile as error:
+        raise DownloadError(f"is not a valid zip archive: {error}")
 
 
 def image_size(data):
@@ -216,7 +402,45 @@ def load_entries_at(ref, root=ROOT):
     return entries
 
 
-def check_entry(report, entry, games, hosts, schema):
+def check_archives(report, entry, game_config, hosts, lister):
+    ok = True
+    for index, archive in enumerate(entry.archives):
+        where = archive_where(entry, index)
+        root = file_root(game_config, archive)
+        if root not in game_config["roots"]:
+            report.error(where, f'root "{root}" is not available for {entry.game}')
+            ok = False
+        for field in ("into", "from"):
+            message = path_error(archive[field]) if archive.get(field) else None
+            if message:
+                report.error(where, f"{field} {message}")
+                ok = False
+        for url in file_urls(archive):
+            message = url_error(url, entry.game, entry.id, hosts)
+            if message:
+                report.error(where, message)
+                ok = False
+        if "contents" in archive or not ok:
+            continue
+        if lister is None:
+            report.warn(where, "not listed (offline), so its members were not checked")
+            continue
+        try:
+            rows, errors = map_archive(archive, lister(archive))
+        except DownloadError as error:
+            report.error(where, f"could not be listed: {error}")
+            ok = False
+            continue
+        for message in errors:
+            report.error(where, message)
+        if errors:
+            ok = False
+            continue
+        entry.listed[index] = rows
+    return ok
+
+
+def check_entry(report, entry, games, hosts, schema, lister=None):
     validator = jsonschema.Draft202012Validator(schema)
     schema_errors = sorted(validator.iter_errors(entry.data), key=lambda error: list(error.absolute_path))
     for error in schema_errors:
@@ -230,18 +454,27 @@ def check_entry(report, entry, games, hosts, schema):
     if entry.data["id"] != entry.id:
         report.error(entry.source, f'id "{entry.data["id"]}" must match the file name "{entry.id}"')
         ok = False
-    if entry.files and "version" not in entry.data:
+    if (entry.files or entry.archives) and "version" not in entry.data:
         report.error(entry.source, "an entry with files needs a version")
         ok = False
     if entry.id in entry.data.get("requires", []):
         report.error(entry.source, "requires itself")
         ok = False
+    if not check_archives(report, entry, game_config, hosts, lister):
+        ok = False
 
+    installed = entry.installed_files
+    if len(installed) > MAX_ENTRY_FILES:
+        report.error(entry.source, f"installs {len(installed)} files; the limit is {MAX_ENTRY_FILES}")
+        ok = False
     seen = set()
-    for index, file in enumerate(entry.files):
-        where = f"{entry.source} files/{index} ({file['path']})"
+    for index, file in enumerate(installed):
+        if "archive" in file:
+            where = f"{archive_where(entry, file['archive'])} {file['member']} -> {file['path']}"
+        else:
+            where = f"{entry.source} files/{index} ({file['path']})"
         root = file_root(game_config, file)
-        if root not in game_config["roots"]:
+        if root not in game_config["roots"] and "archive" not in file:
             report.error(where, f'root "{root}" is not available for {entry.game}')
             ok = False
         message = path_error(file["path"])
@@ -250,7 +483,7 @@ def check_entry(report, entry, games, hosts, schema):
             ok = False
         key = file_key(game_config, file)
         if key in seen:
-            report.error(where, "is listed twice")
+            report.error(where, "is listed twice (paths ignore case)")
             ok = False
         seen.add(key)
         for url in file_urls(file):
@@ -322,10 +555,12 @@ def check_catalog(report, entries, games, protected=None):
                 if required not in ids:
                     report.error(entry.source, f'requires "{required}", which is not a {game} entry')
                     bad.add(entry.source)
-            for file in entry.files:
+            for file in entry.installed_files:
                 key = file_key(config, file)
                 root, path = key.split(":", 1)
                 where = f"{entry.source} ({file['path']})"
+                if "archive" in file:
+                    where = f"{archive_where(entry, file['archive'])} {file['member']} -> {file['path']}"
                 other = owners.get(key)
                 if other and other != entry.source:
                     report.error(where, f"is also listed by {other}")
@@ -389,6 +624,26 @@ def check_hash_policy(report, entry, base_data, games):
     return changed
 
 
+def archive_source(archive):
+    return {key: archive.get(key) for key in ARCHIVE_SOURCE}
+
+
+def check_archive_policy(report, entry, base_data):
+    """Like check_hash_policy for archives: hash and contents are publish-only. Returns the indexes to download."""
+    base_archives = []
+    if isinstance(base_data, dict):
+        base_archives = [archive for archive in base_data.get("archives", []) or [] if isinstance(archive, dict)]
+    changed = []
+    for index, archive in enumerate(entry.archives):
+        base = next((old for old in base_archives if archive_source(old) == archive_source(archive)), None)
+        filled = "hash" in archive or "contents" in archive
+        if filled and not (base and base.get("hash") == archive.get("hash") and base.get("contents") == archive.get("contents")):
+            report.error(archive_where(entry, index), "remove hash and contents; they are filled in automatically after merge")
+        if base is None or "hash" not in base or "contents" not in base:
+            changed.append(index)
+    return changed
+
+
 class _RedirectGuard(urllib.request.HTTPRedirectHandler):
     def __init__(self, allowed):
         self.allowed = allowed
@@ -406,7 +661,7 @@ def default_opener(hosts):
     return opener.open
 
 
-def _stream(open_url, url, hasher, total, limit, timeout, chunk_size):
+def _stream(open_url, url, hasher, total, limit, timeout, chunk_size, out=None):
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with open_url(request, timeout=timeout) as response:
         content_type = (response.headers.get("Content-Type") or "").lower()
@@ -420,9 +675,11 @@ def _stream(open_url, url, hasher, total, limit, timeout, chunk_size):
             if total > limit:
                 raise DownloadError(f"{url} is larger than the listed size")
             hasher.update(chunk)
+            if out:
+                out.write(chunk)
 
 
-def download_hash(file, hosts, open_url=None, timeout=60, retries=3, chunk_size=1 << 20, progress=None):
+def download_hash(file, hosts, open_url=None, timeout=60, retries=3, chunk_size=1 << 20, progress=None, out=None):
     open_url = open_url or default_opener(hosts)
     hasher = xxhash.xxh3_64()
     total = 0
@@ -433,13 +690,16 @@ def download_hash(file, hosts, open_url=None, timeout=60, retries=3, chunk_size=
             for candidate in candidates:
                 saved, start = hasher.copy(), total
                 try:
-                    total = _stream(open_url, candidate, hasher, total, file["size"], timeout, chunk_size)
+                    total = _stream(open_url, candidate, hasher, total, file["size"], timeout, chunk_size, out)
                     failure = None
                     break
                 except DownloadError:
                     raise
                 except (urllib.error.URLError, OSError, ValueError) as error:
                     hasher, total = saved, start
+                    if out:
+                        out.seek(start)
+                        out.truncate()
                     failure = f"{candidate}: {error}"
             if failure is None:
                 break
@@ -450,6 +710,39 @@ def download_hash(file, hosts, open_url=None, timeout=60, retries=3, chunk_size=
     if total != file["size"]:
         raise DownloadError(f"downloaded {total} bytes but size says {file['size']}")
     return format_hash(hasher)
+
+
+def hash_member(zf, info, chunk_size=1 << 20):
+    hasher = xxhash.xxh3_64()
+    total = 0
+    # zipfile checks the CRC when the member is read to the end.
+    with zf.open(info) as handle:
+        while chunk := handle.read(chunk_size):
+            total += len(chunk)
+            hasher.update(chunk)
+    if total != info.file_size:
+        raise DownloadError(f'"{info.orig_filename}" extracted to {total} bytes, not {info.file_size}')
+    return format_hash(hasher)
+
+
+def download_archive(archive, hosts, work_dir=None, open_url=None, **options):
+    """Downloads an archive to a temp file, hashes it and each member it installs; returns (hash, contents)."""
+    handle = tempfile.NamedTemporaryFile(dir=work_dir, suffix=".zip", delete=False)
+    try:
+        with handle:
+            digest = download_hash(archive, hosts, open_url, out=handle, **options)
+        try:
+            with zipfile.ZipFile(handle.name) as zf:
+                infos = {info.orig_filename: info for info in zf.infolist()}
+                rows, errors = map_archive(archive, list(infos.values()))
+                if errors:
+                    raise DownloadError("; ".join(errors))
+                contents = [{**row, "hash": hash_member(zf, infos[row["member"]])} for row in rows]
+        except (zipfile.BadZipFile, zipfile.LargeZipFile, NotImplementedError, RuntimeError) as error:
+            raise DownloadError(f"the archive is damaged or unsupported: {error}")
+        return digest, contents
+    finally:
+        os.unlink(handle.name)
 
 
 def entry_times(*where, root=ROOT):
@@ -465,10 +758,17 @@ def entry_times(*where, root=ROOT):
 def dist_item(entry, games, repository, commit, root=ROOT):
     config = games["games"][entry.game]
     files = []
-    for file in entry.files:
+    for file in entry.installed_files:
         item = {"root": file_root(config, file), "path": file["path"], "size": file["size"], "hash": file["hash"]}
-        item.update({"url": file["url"]} if "url" in file else {"parts": file["parts"]})
+        if "archive" in file:
+            item.update({"archive": file["archive"], "member": file["member"]})
+        else:
+            item.update({"url": file["url"]} if "url" in file else {"parts": file["parts"]})
         files.append(item)
+    archives = []
+    for archive in entry.archives:
+        item = {"url": archive["url"]} if "url" in archive else {"parts": archive["parts"]}
+        archives.append({**item, "size": archive["size"], "hash": archive["hash"]})
     # A renamed game folder keeps its entries' dates from before the rename.
     former = [f"items/{config['formerly']}/{entry.id}"] if "formerly" in config else []
     added, updated = entry_times(entry.where, *former, root=root)
@@ -488,6 +788,7 @@ def dist_item(entry, games, repository, commit, root=ROOT):
         "addedAt": added,
         "updatedAt": updated,
         "files": files,
+        **({"archives": archives} if archives else {}),
     }
 
 

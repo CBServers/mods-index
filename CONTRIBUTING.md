@@ -89,8 +89,9 @@ Black Ops III uses the Steam Workshop and is not listed here.
 - `images`: file names in your entry folder, in order. See below.
 - `requires`: ids of other entries for the same game that must be installed first, up to 16.
 - `files`: every file the launcher installs. See below.
+- `archives`: zips the launcher extracts files from, instead of or as well as `files`. See Zip archives.
 
-Leave out `hash`. It is filled in after merge.
+Leave out `hash` (and `contents` on archives). They are filled in after merge.
 
 ## Files
 
@@ -160,7 +161,50 @@ into one file.
 
 To split a file with 7-Zip (https://www.7-zip.org): right click the file, choose Split file, type `1900M` in
 "Split to volumes, bytes", and click OK. Upload every `.001`, `.002`, ... part as it is. Do not zip or rename them.
-Archives (`.zip`, `.7z`, `.rar`) are not supported; list every file on its own.
+
+## Zip archives
+
+If your release is a `.zip`, you can list it under `archives` instead of listing every file. The launcher
+downloads the zip and extracts the files from it.
+
+```json
+"archives": [
+    {
+        "url": "https://github.com/you/your-repo/releases/download/v1.0/zm_example.zip",
+        "size": 757002069,
+        "into": "usermaps"
+    }
+]
+```
+
+- `url` (or `parts` for a zip of 2 GB or more, as for files), `size` of the whole zip and an optional `root`, as
+  for files.
+- `into`: the folder under the root the zip's contents go into. Leave it out to extract into the root itself.
+- `from`: a folder inside the zip to take, for zips that wrap everything in a folder like `MyMod-v1.2/`. Only
+  what is inside it is installed, without the folder itself. Leave it out to take the whole zip.
+- `exclude`: names of files in the zip to skip, exactly as the zip lists them (for example `readme.txt`). No
+  wildcards. Folders, `__MACOSX/`, `.DS_Store` and `Thumbs.db` are always skipped.
+
+Each file installs to `into` plus its name in the zip, with `from` taken off the front. A zip holding
+`zm_example/zm_example.ff` with `"into": "usermaps"` installs `usermaps/zm_example/zm_example.ff`. The checks
+on your pull request list every file in the zip and where it installs, so you can see the result before merge.
+
+The same rules apply to every file in the zip as to a listed file: allowed paths, no game or client files, no
+file another entry lists. A top-level `readme.txt` would install into the root and clash with other entries, so
+add files like that to `exclude`. On top of that:
+
+- Only zip. `.7z` and `.rar` are not supported.
+- Files must be stored or deflate compressed (what Windows, 7-Zip's zip format and most tools write), not
+  encrypted, and not symbolic links.
+- Names inside the zip must use forward slashes and relative folders. Names with accents must be stored as
+  UTF-8. Rezip with 7-Zip if the checks say otherwise.
+- At most 4000 files per entry.
+
+Loose files and archives can be mixed in one entry. Prefer loose files for big packs where only a few files
+change between versions: when any file in a zip changes, players download the whole zip again.
+
+Leave out `hash` and `contents` on archives. They are filled in after merge, with the hash of every file in the
+zip.
 
 ## Images
 
@@ -182,7 +226,8 @@ cannot be installed yet. Add `files` in a later pull request.
 ## Updates
 
 Make a new release with the new files, then open a pull request that changes your entry: a new `version`, new
-links and new sizes. Remove the `hash` of every file you changed; the checks tell you if you missed one.
+links and new sizes. Remove the `hash` of every file you changed, and the `hash` and `contents` of every archive
+you changed; the checks tell you if you missed one.
 Players see Update in the launcher and only download the files that changed. Files your new version no longer
 lists are removed from their game.
 

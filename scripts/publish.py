@@ -19,7 +19,8 @@ def main():
     games, hosts, schema = lib.load_config()
     report = lib.Report()
     entries = lib.load_entries(report, games)
-    valid = [entry for entry in entries if lib.check_entry(report, entry, games, hosts, schema)]
+    lister = None if args.offline else (lambda archive: lib.list_archive(archive, hosts))
+    valid = [entry for entry in entries if lib.check_entry(report, entry, games, hosts, schema, lister)]
 
     protected = None
     if not args.offline:
@@ -54,6 +55,23 @@ def main():
                 entry.data["files"][index] = ordered
                 changed = True
                 hashed.append(f"| `{entry.game}/{entry.id}` | `{file['path']}` | `{digest}` |")
+            for index, archive in enumerate(entry.archives):
+                if "hash" in archive and "contents" in archive:
+                    continue
+                where = lib.archive_where(entry, index)
+                print(f"hashing {where}", flush=True)
+                try:
+                    digest, contents = lib.download_archive(archive, hosts)
+                except lib.DownloadError as error:
+                    report.error(where, str(error))
+                    continue
+                ordered = {key: archive[key] for key in lib.ARCHIVE_SOURCE if key in archive}
+                ordered.update({key: value for key, value in archive.items() if key not in ordered and key not in ("hash", "contents")})
+                ordered["hash"] = digest
+                ordered["contents"] = contents
+                entry.data["archives"][index] = ordered
+                changed = True
+                hashed.append(f"| `{entry.game}/{entry.id}` | `{lib.archive_name(archive)}` ({len(contents)} files) | `{digest}` |")
             if changed:
                 lib.write_entry(entry)
 
@@ -69,8 +87,9 @@ def main():
                 if entry.game != game:
                     continue
                 missing = [file["path"] for file in entry.files if "hash" not in file]
+                missing += [lib.archive_name(archive) for archive in entry.archives if "hash" not in archive or "contents" not in archive]
                 if missing:
-                    report.error(entry.source, f"left out of the index: {len(missing)} file(s) have no hash")
+                    report.error(entry.source, f"left out of the index: {len(missing)} file(s) or archive(s) have no hash")
                     continue
                 items.append(lib.dist_item(entry, games, repository, commit))
             items.sort(key=lambda item: item["id"])
