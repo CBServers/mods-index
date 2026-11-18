@@ -1,0 +1,18 @@
+{
+    "id": "zm_magma",
+    "type": "map",
+    "name": "Magma (MP Maps in Zombies)",
+    "author": "Liam-McCormack-Github",
+    "version": "2026-10-02",
+    "description": "The Black Ops II multiplayer map Magma ported into Zombies, with its own scripts and assets and almost no gameplay changes. It ships its own images, so no DLC is needed. Special enemies, including the DLC 5 ports, appear on every map.\n\nInstalls the MP Maps in Zombies Menu, which adds a main menu button to launch it. From the console, with any mod loaded: g_gametype zstandard;map zm_magma\n\nThis is an early beta. Bug reports: [url=https://github.com/Liam-McCormack-Github/bo2-release-builds]github.com/Liam-McCormack-Github/bo2-release-builds[/url]",
+    "requires": [
+        "mp_maps_menu"
+    ],
+    "archives": [
+        {
+            "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/usermaps-2026-10-02/zm_magma.zip",
+            "size": 735291200,
+            "into": "usermaps"
+        }
+    ]
+}
