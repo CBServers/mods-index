@@ -5,6 +5,9 @@
     "author": "Liam-McCormack-Github",
     "version": "2026-10-02",
     "description": "The menu mod for the MP Maps in Zombies ports. It adds main menu buttons that launch each ported map without console commands, custom loading screen art and text, and options for boss and special zombies.\n\nIt also enables sv_cheats and adds a command listener: set zm_cmd <command>.\n\nThis is an early beta. Bug reports: [url=https://github.com/Liam-McCormack-Github/bo2-release-builds]github.com/Liam-McCormack-Github/bo2-release-builds[/url]",
+    "images": [
+        "main.jpg"
+    ],
     "archives": [
         {
             "url": "https://github.com/Liam-McCormack-Github/bo2-release-builds/releases/download/mod-2026-10-02/mod_to_launch_mp_maps_in_zombies.zip",
